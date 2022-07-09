@@ -1,0 +1,4 @@
+__pycache__
+checkpoint/temp/*
+log/uru/*
+log/viz/*

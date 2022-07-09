@@ -1,0 +1,25 @@
+# HYPER PARAMETERS FOR ALL GAMES
+# CREATED BY SIYUEXI
+# 2022.07.02
+breakout: 
+  name: "BreakoutNoFrameskip-v4"
+  type: "CRD2QN"
+  seed: 0
+  width: 84
+  height: 84
+  n_actions: 4
+  n_states: 4
+  skip: 4
+  memory_capacity: 400000
+  noop_max: 30
+  # hyper_params for training only
+  hyper_params: 
+    gamma: 0.99
+    epsilon: 0.01
+    batch_size: 32
+    epoch: 1000000
+    lr: 0.00025
+    f_save: 100000
+    f_update: 10000
+    f_epoch: 2000
+    f_episode: 200
