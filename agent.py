@@ -234,34 +234,45 @@ class Player():
         # loading parameters
         assert os.path.exists("./checkpoint/" + self.game + ".pth"), "CHECKPOINT NOT EXSITS."
         self.net.load_state_dict(torch.load("./checkpoint/" + self.game + ".pth"))
+        self.net.to(self.device)
         # cache
+        episode = 0
+        epoch = 0
         total_reward = 0
-        total_step = 0
 
-        state = torch.from_numpy(np.array(self.env.reset())).unsqueeze(0).float()
+        state = self.env.reset()
         print("testing agent...")
-        while(True):
-            if np.random.random() > 0.05:
-                action = self.net(state).max(dim=1)[1].numpy()
-            else: 
+        while episode < 10:
+
+            cur_index = self.mem.store_memory_obs(state)
+            encoded_state = self.mem.encoder_recent_observation()  # numpy: [m*c, h, w]
+
+            sample = np.random.random()
+            if sample > 0.05:
+                # numpy: [m*c, h, w] => tensor: [1, m*c, h, w]
+                encoded_state = change_to_tensor(encoded_state).unsqueeze(0)
+                action = self.net(encoded_state).max(dim=1)[1].item()
+            else:
                 action = self.env.action_space.sample()
-            time.sleep(0.05)
-            state, reward, done, info = self.env.step(action)
-            state = torch.from_numpy(np.array(state)).unsqueeze(0).float()
 
-            # calculate reward
+            # action = env.action_space.sample()
+            state, reward, done, _ = self.env.step(action)
+            self.mem.store_memory_effect(cur_index, action, reward, done)
+
             total_reward += reward
-            total_step += 1
-
-            # render
+            epoch += 1
             self.env.render()
-        
-            if done:
-                print("total reward: " + str(total_reward))
-                print("total step: " + str(total_step))
-                self.env.close()
-                break
+            time.sleep(0.05)
 
+            if done:
+                print("game %d done in %d steps with %d return" % (episode, epoch, total_reward))
+                time.sleep(1)
+                self.env.reset()
+                episode += 1
+                epoch = 0
+                total_reward = 0
+        
+        self.env.close()
         print("agent testing finished")
         
     def __experience_visualize(self):
