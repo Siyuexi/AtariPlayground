@@ -1,0 +1,959 @@
+2022-07-10 14:37:06.541 | DEBUG    | agent:__train_loop:195 - Epoch [2000/1000000]	AverageLoss: 0.018127	
+2022-07-10 14:37:10.563 | INFO     | agent:__train_loop:210 - Episode [200]	AverageReward: 0.390000	AverageStep: 11.775000	
+2022-07-10 14:37:30.040 | DEBUG    | agent:__train_loop:195 - Epoch [4000/1000000]	AverageLoss: 0.016390	
+2022-07-10 14:37:32.903 | INFO     | agent:__train_loop:210 - Episode [400]	AverageReward: 0.230000	AverageStep: 9.410000	
+2022-07-10 14:37:52.269 | DEBUG    | agent:__train_loop:195 - Epoch [6000/1000000]	AverageLoss: 0.013677	
+2022-07-10 14:37:58.520 | INFO     | agent:__train_loop:210 - Episode [600]	AverageReward: 0.390000	AverageStep: 11.485000	
+2022-07-10 14:38:15.630 | DEBUG    | agent:__train_loop:195 - Epoch [8000/1000000]	AverageLoss: 0.012483	
+2022-07-10 14:38:23.212 | INFO     | agent:__train_loop:210 - Episode [800]	AverageReward: 0.315000	AverageStep: 10.440000	
+2022-07-10 14:38:39.135 | DEBUG    | agent:__train_loop:195 - Epoch [10000/1000000]	AverageLoss: 0.010191	
+2022-07-10 14:38:47.951 | INFO     | agent:__train_loop:210 - Episode [1000]	AverageReward: 0.330000	AverageStep: 10.905000	
+2022-07-10 14:39:02.536 | DEBUG    | agent:__train_loop:195 - Epoch [12000/1000000]	AverageLoss: 0.008793	
+2022-07-10 14:39:13.236 | INFO     | agent:__train_loop:210 - Episode [1200]	AverageReward: 0.330000	AverageStep: 10.590000	
+2022-07-10 14:39:25.535 | DEBUG    | agent:__train_loop:195 - Epoch [14000/1000000]	AverageLoss: 0.008127	
+2022-07-10 14:39:36.804 | INFO     | agent:__train_loop:210 - Episode [1400]	AverageReward: 0.320000	AverageStep: 10.035000	
+2022-07-10 14:39:48.882 | DEBUG    | agent:__train_loop:195 - Epoch [16000/1000000]	AverageLoss: 0.006830	
+2022-07-10 14:40:01.049 | INFO     | agent:__train_loop:210 - Episode [1600]	AverageReward: 0.325000	AverageStep: 10.510000	
+2022-07-10 14:40:12.723 | DEBUG    | agent:__train_loop:195 - Epoch [18000/1000000]	AverageLoss: 0.006471	
+2022-07-10 14:40:26.040 | INFO     | agent:__train_loop:210 - Episode [1800]	AverageReward: 0.335000	AverageStep: 10.695000	
+2022-07-10 14:40:35.585 | DEBUG    | agent:__train_loop:195 - Epoch [20000/1000000]	AverageLoss: 0.005654	
+2022-07-10 14:40:51.430 | INFO     | agent:__train_loop:210 - Episode [2000]	AverageReward: 0.330000	AverageStep: 10.865000	
+2022-07-10 14:40:59.513 | DEBUG    | agent:__train_loop:195 - Epoch [22000/1000000]	AverageLoss: 0.005270	
+2022-07-10 14:41:14.278 | INFO     | agent:__train_loop:210 - Episode [2200]	AverageReward: 0.220000	AverageStep: 9.495000	
+2022-07-10 14:41:22.822 | DEBUG    | agent:__train_loop:195 - Epoch [24000/1000000]	AverageLoss: 0.004975	
+2022-07-10 14:41:38.032 | INFO     | agent:__train_loop:210 - Episode [2400]	AverageReward: 0.315000	AverageStep: 10.260000	
+2022-07-10 14:41:46.617 | DEBUG    | agent:__train_loop:195 - Epoch [26000/1000000]	AverageLoss: 0.003899	
+2022-07-10 14:42:01.173 | INFO     | agent:__train_loop:210 - Episode [2600]	AverageReward: 0.285000	AverageStep: 10.095000	
+2022-07-10 14:42:09.047 | DEBUG    | agent:__train_loop:195 - Epoch [28000/1000000]	AverageLoss: 0.004491	
+2022-07-10 14:42:24.013 | INFO     | agent:__train_loop:210 - Episode [2800]	AverageReward: 0.285000	AverageStep: 9.775000	
+2022-07-10 14:42:32.535 | DEBUG    | agent:__train_loop:195 - Epoch [30000/1000000]	AverageLoss: 0.003312	
+2022-07-10 14:42:47.780 | INFO     | agent:__train_loop:210 - Episode [3000]	AverageReward: 0.265000	AverageStep: 9.805000	
+2022-07-10 14:42:56.684 | DEBUG    | agent:__train_loop:195 - Epoch [32000/1000000]	AverageLoss: 0.003263	
+2022-07-10 14:43:14.350 | INFO     | agent:__train_loop:210 - Episode [3200]	AverageReward: 0.370000	AverageStep: 11.450000	
+2022-07-10 14:43:20.426 | DEBUG    | agent:__train_loop:195 - Epoch [34000/1000000]	AverageLoss: 0.003284	
+2022-07-10 14:43:38.806 | INFO     | agent:__train_loop:210 - Episode [3400]	AverageReward: 0.300000	AverageStep: 10.430000	
+2022-07-10 14:43:43.254 | DEBUG    | agent:__train_loop:195 - Epoch [36000/1000000]	AverageLoss: 0.002774	
+2022-07-10 14:44:05.866 | INFO     | agent:__train_loop:210 - Episode [3600]	AverageReward: 0.355000	AverageStep: 11.450000	
+2022-07-10 14:44:06.953 | DEBUG    | agent:__train_loop:195 - Epoch [38000/1000000]	AverageLoss: 0.002172	
+2022-07-10 14:44:30.437 | DEBUG    | agent:__train_loop:195 - Epoch [40000/1000000]	AverageLoss: 0.002375	
+2022-07-10 14:44:32.047 | INFO     | agent:__train_loop:210 - Episode [3800]	AverageReward: 0.365000	AverageStep: 11.265000	
+2022-07-10 14:44:54.661 | DEBUG    | agent:__train_loop:195 - Epoch [42000/1000000]	AverageLoss: 0.002078	
+2022-07-10 14:44:57.041 | INFO     | agent:__train_loop:210 - Episode [4000]	AverageReward: 0.305000	AverageStep: 10.375000	
+2022-07-10 14:45:16.947 | DEBUG    | agent:__train_loop:195 - Epoch [44000/1000000]	AverageLoss: 0.002105	
+2022-07-10 14:45:23.144 | INFO     | agent:__train_loop:210 - Episode [4200]	AverageReward: 0.375000	AverageStep: 11.440000	
+2022-07-10 14:45:40.514 | DEBUG    | agent:__train_loop:195 - Epoch [46000/1000000]	AverageLoss: 0.002022	
+2022-07-10 14:45:47.634 | INFO     | agent:__train_loop:210 - Episode [4400]	AverageReward: 0.305000	AverageStep: 10.585000	
+2022-07-10 14:46:03.234 | DEBUG    | agent:__train_loop:195 - Epoch [48000/1000000]	AverageLoss: 0.001868	
+2022-07-10 14:46:12.015 | INFO     | agent:__train_loop:210 - Episode [4600]	AverageReward: 0.310000	AverageStep: 10.445000	
+2022-07-10 14:46:26.059 | DEBUG    | agent:__train_loop:195 - Epoch [50000/1000000]	AverageLoss: 0.001624	
+2022-07-10 14:46:36.613 | INFO     | agent:__train_loop:210 - Episode [4800]	AverageReward: 0.325000	AverageStep: 10.740000	
+2022-07-10 14:46:49.675 | DEBUG    | agent:__train_loop:195 - Epoch [52000/1000000]	AverageLoss: 0.001632	
+2022-07-10 14:47:00.752 | INFO     | agent:__train_loop:210 - Episode [5000]	AverageReward: 0.320000	AverageStep: 10.730000	
+2022-07-10 14:47:11.850 | DEBUG    | agent:__train_loop:195 - Epoch [54000/1000000]	AverageLoss: 0.001579	
+2022-07-10 14:47:26.547 | INFO     | agent:__train_loop:210 - Episode [5200]	AverageReward: 0.360000	AverageStep: 11.360000	
+2022-07-10 14:47:34.916 | DEBUG    | agent:__train_loop:195 - Epoch [56000/1000000]	AverageLoss: 0.001517	
+2022-07-10 14:47:52.333 | INFO     | agent:__train_loop:210 - Episode [5400]	AverageReward: 0.355000	AverageStep: 11.255000	
+2022-07-10 14:47:57.535 | DEBUG    | agent:__train_loop:195 - Epoch [58000/1000000]	AverageLoss: 0.001375	
+2022-07-10 14:48:16.594 | INFO     | agent:__train_loop:210 - Episode [5600]	AverageReward: 0.325000	AverageStep: 10.720000	
+2022-07-10 14:48:20.452 | DEBUG    | agent:__train_loop:195 - Epoch [60000/1000000]	AverageLoss: 0.001308	
+2022-07-10 14:48:41.435 | DEBUG    | agent:__train_loop:195 - Epoch [62000/1000000]	AverageLoss: 0.001430	
+2022-07-10 14:48:43.132 | INFO     | agent:__train_loop:210 - Episode [5800]	AverageReward: 0.435000	AverageStep: 12.310000	
+2022-07-10 14:49:04.794 | DEBUG    | agent:__train_loop:195 - Epoch [64000/1000000]	AverageLoss: 0.001478	
+2022-07-10 14:49:06.345 | INFO     | agent:__train_loop:210 - Episode [6000]	AverageReward: 0.265000	AverageStep: 10.060000	
+2022-07-10 14:49:27.180 | DEBUG    | agent:__train_loop:195 - Epoch [66000/1000000]	AverageLoss: 0.001206	
+2022-07-10 14:49:30.962 | INFO     | agent:__train_loop:210 - Episode [6200]	AverageReward: 0.345000	AverageStep: 10.825000	
+2022-07-10 14:49:49.534 | DEBUG    | agent:__train_loop:195 - Epoch [68000/1000000]	AverageLoss: 0.001664	
+2022-07-10 14:49:55.100 | INFO     | agent:__train_loop:210 - Episode [6400]	AverageReward: 0.355000	AverageStep: 10.835000	
+2022-07-10 14:50:11.608 | DEBUG    | agent:__train_loop:195 - Epoch [70000/1000000]	AverageLoss: 0.001179	
+2022-07-10 14:50:20.755 | INFO     | agent:__train_loop:210 - Episode [6600]	AverageReward: 0.375000	AverageStep: 11.510000	
+2022-07-10 14:50:35.418 | DEBUG    | agent:__train_loop:195 - Epoch [72000/1000000]	AverageLoss: 0.001111	
+2022-07-10 14:50:47.090 | INFO     | agent:__train_loop:210 - Episode [6800]	AverageReward: 0.350000	AverageStep: 11.355000	
+2022-07-10 14:50:57.504 | DEBUG    | agent:__train_loop:195 - Epoch [74000/1000000]	AverageLoss: 0.000925	
+2022-07-10 14:51:13.170 | INFO     | agent:__train_loop:210 - Episode [7000]	AverageReward: 0.355000	AverageStep: 11.485000	
+2022-07-10 14:51:21.280 | DEBUG    | agent:__train_loop:195 - Epoch [76000/1000000]	AverageLoss: 0.001187	
+2022-07-10 14:51:36.655 | INFO     | agent:__train_loop:210 - Episode [7200]	AverageReward: 0.275000	AverageStep: 9.780000	
+2022-07-10 14:51:44.026 | DEBUG    | agent:__train_loop:195 - Epoch [78000/1000000]	AverageLoss: 0.000924	
+2022-07-10 14:52:01.037 | INFO     | agent:__train_loop:210 - Episode [7400]	AverageReward: 0.350000	AverageStep: 10.975000	
+2022-07-10 14:52:06.814 | DEBUG    | agent:__train_loop:195 - Epoch [80000/1000000]	AverageLoss: 0.001088	
+2022-07-10 14:52:24.786 | INFO     | agent:__train_loop:210 - Episode [7600]	AverageReward: 0.290000	AverageStep: 10.385000	
+2022-07-10 14:52:29.542 | DEBUG    | agent:__train_loop:195 - Epoch [82000/1000000]	AverageLoss: 0.001069	
+2022-07-10 14:52:47.045 | INFO     | agent:__train_loop:210 - Episode [7800]	AverageReward: 0.255000	AverageStep: 9.670000	
+2022-07-10 14:52:52.563 | DEBUG    | agent:__train_loop:195 - Epoch [84000/1000000]	AverageLoss: 0.000981	
+2022-07-10 14:53:12.039 | INFO     | agent:__train_loop:210 - Episode [8000]	AverageReward: 0.340000	AverageStep: 11.060000	
+2022-07-10 14:53:15.019 | DEBUG    | agent:__train_loop:195 - Epoch [86000/1000000]	AverageLoss: 0.000866	
+2022-07-10 14:53:37.237 | DEBUG    | agent:__train_loop:195 - Epoch [88000/1000000]	AverageLoss: 0.001174	
+2022-07-10 14:53:37.615 | INFO     | agent:__train_loop:210 - Episode [8200]	AverageReward: 0.385000	AverageStep: 11.605000	
+2022-07-10 14:54:00.376 | DEBUG    | agent:__train_loop:195 - Epoch [90000/1000000]	AverageLoss: 0.000940	
+2022-07-10 14:54:01.164 | INFO     | agent:__train_loop:210 - Episode [8400]	AverageReward: 0.275000	AverageStep: 10.090000	
+2022-07-10 14:54:21.942 | DEBUG    | agent:__train_loop:195 - Epoch [92000/1000000]	AverageLoss: 0.001042	
+2022-07-10 14:54:27.546 | INFO     | agent:__train_loop:210 - Episode [8600]	AverageReward: 0.440000	AverageStep: 12.150000	
+2022-07-10 14:54:44.945 | DEBUG    | agent:__train_loop:195 - Epoch [94000/1000000]	AverageLoss: 0.001251	
+2022-07-10 14:54:51.399 | INFO     | agent:__train_loop:210 - Episode [8800]	AverageReward: 0.315000	AverageStep: 10.430000	
+2022-07-10 14:55:07.528 | DEBUG    | agent:__train_loop:195 - Epoch [96000/1000000]	AverageLoss: 0.001231	
+2022-07-10 14:55:16.250 | INFO     | agent:__train_loop:210 - Episode [9000]	AverageReward: 0.335000	AverageStep: 10.880000	
+2022-07-10 14:55:30.847 | DEBUG    | agent:__train_loop:195 - Epoch [98000/1000000]	AverageLoss: 0.001034	
+2022-07-10 14:55:39.386 | INFO     | agent:__train_loop:210 - Episode [9200]	AverageReward: 0.250000	AverageStep: 9.830000	
+2022-07-10 14:55:53.305 | DEBUG    | agent:__train_loop:195 - Epoch [100000/1000000]	AverageLoss: 0.000923	
+2022-07-10 14:56:04.580 | INFO     | agent:__train_loop:210 - Episode [9400]	AverageReward: 0.380000	AverageStep: 11.400000	
+2022-07-10 14:56:16.029 | DEBUG    | agent:__train_loop:195 - Epoch [102000/1000000]	AverageLoss: 0.000984	
+2022-07-10 14:56:28.657 | INFO     | agent:__train_loop:210 - Episode [9600]	AverageReward: 0.305000	AverageStep: 10.490000	
+2022-07-10 14:56:39.033 | DEBUG    | agent:__train_loop:195 - Epoch [104000/1000000]	AverageLoss: 0.000897	
+2022-07-10 14:56:52.964 | INFO     | agent:__train_loop:210 - Episode [9800]	AverageReward: 0.310000	AverageStep: 10.645000	
+2022-07-10 14:57:01.859 | DEBUG    | agent:__train_loop:195 - Epoch [106000/1000000]	AverageLoss: 0.000922	
+2022-07-10 14:57:16.876 | INFO     | agent:__train_loop:210 - Episode [10000]	AverageReward: 0.305000	AverageStep: 10.365000	
+2022-07-10 14:57:24.834 | DEBUG    | agent:__train_loop:195 - Epoch [108000/1000000]	AverageLoss: 0.000860	
+2022-07-10 14:57:41.291 | INFO     | agent:__train_loop:210 - Episode [10200]	AverageReward: 0.320000	AverageStep: 10.625000	
+2022-07-10 14:57:47.833 | DEBUG    | agent:__train_loop:195 - Epoch [110000/1000000]	AverageLoss: 0.000660	
+2022-07-10 14:58:05.887 | INFO     | agent:__train_loop:210 - Episode [10400]	AverageReward: 0.350000	AverageStep: 10.905000	
+2022-07-10 14:58:10.590 | DEBUG    | agent:__train_loop:195 - Epoch [112000/1000000]	AverageLoss: 0.001063	
+2022-07-10 14:58:30.540 | INFO     | agent:__train_loop:210 - Episode [10600]	AverageReward: 0.340000	AverageStep: 10.960000	
+2022-07-10 14:58:32.435 | DEBUG    | agent:__train_loop:195 - Epoch [114000/1000000]	AverageLoss: 0.001007	
+2022-07-10 14:58:54.828 | DEBUG    | agent:__train_loop:195 - Epoch [116000/1000000]	AverageLoss: 0.000985	
+2022-07-10 14:58:56.109 | INFO     | agent:__train_loop:210 - Episode [10800]	AverageReward: 0.380000	AverageStep: 11.575000	
+2022-07-10 14:59:17.620 | DEBUG    | agent:__train_loop:195 - Epoch [118000/1000000]	AverageLoss: 0.000870	
+2022-07-10 14:59:20.044 | INFO     | agent:__train_loop:210 - Episode [11000]	AverageReward: 0.310000	AverageStep: 10.585000	
+2022-07-10 14:59:40.220 | DEBUG    | agent:__train_loop:195 - Epoch [120000/1000000]	AverageLoss: 0.001013	
+2022-07-10 14:59:44.825 | INFO     | agent:__train_loop:210 - Episode [11200]	AverageReward: 0.325000	AverageStep: 10.855000	
+2022-07-10 15:00:02.828 | DEBUG    | agent:__train_loop:195 - Epoch [122000/1000000]	AverageLoss: 0.001015	
+2022-07-10 15:00:09.579 | INFO     | agent:__train_loop:210 - Episode [11400]	AverageReward: 0.335000	AverageStep: 10.795000	
+2022-07-10 15:00:25.358 | DEBUG    | agent:__train_loop:195 - Epoch [124000/1000000]	AverageLoss: 0.000977	
+2022-07-10 15:00:34.449 | INFO     | agent:__train_loop:210 - Episode [11600]	AverageReward: 0.355000	AverageStep: 11.060000	
+2022-07-10 15:00:48.036 | DEBUG    | agent:__train_loop:195 - Epoch [126000/1000000]	AverageLoss: 0.001184	
+2022-07-10 15:01:00.020 | INFO     | agent:__train_loop:210 - Episode [11800]	AverageReward: 0.365000	AverageStep: 11.445000	
+2022-07-10 15:01:10.448 | DEBUG    | agent:__train_loop:195 - Epoch [128000/1000000]	AverageLoss: 0.001051	
+2022-07-10 15:01:23.169 | INFO     | agent:__train_loop:210 - Episode [12000]	AverageReward: 0.290000	AverageStep: 10.080000	
+2022-07-10 15:01:33.802 | DEBUG    | agent:__train_loop:195 - Epoch [130000/1000000]	AverageLoss: 0.001245	
+2022-07-10 15:01:48.046 | INFO     | agent:__train_loop:210 - Episode [12200]	AverageReward: 0.325000	AverageStep: 10.625000	
+2022-07-10 15:01:56.749 | DEBUG    | agent:__train_loop:195 - Epoch [132000/1000000]	AverageLoss: 0.000972	
+2022-07-10 15:02:12.724 | INFO     | agent:__train_loop:210 - Episode [12400]	AverageReward: 0.335000	AverageStep: 10.860000	
+2022-07-10 15:02:19.797 | DEBUG    | agent:__train_loop:195 - Epoch [134000/1000000]	AverageLoss: 0.001046	
+2022-07-10 15:02:36.939 | INFO     | agent:__train_loop:210 - Episode [12600]	AverageReward: 0.290000	AverageStep: 10.400000	
+2022-07-10 15:02:42.747 | DEBUG    | agent:__train_loop:195 - Epoch [136000/1000000]	AverageLoss: 0.001124	
+2022-07-10 15:03:03.422 | INFO     | agent:__train_loop:210 - Episode [12800]	AverageReward: 0.410000	AverageStep: 11.975000	
+2022-07-10 15:03:05.099 | DEBUG    | agent:__train_loop:195 - Epoch [138000/1000000]	AverageLoss: 0.000981	
+2022-07-10 15:03:26.547 | INFO     | agent:__train_loop:210 - Episode [13000]	AverageReward: 0.250000	AverageStep: 9.785000	
+2022-07-10 15:03:28.582 | DEBUG    | agent:__train_loop:195 - Epoch [140000/1000000]	AverageLoss: 0.000968	
+2022-07-10 15:03:51.444 | INFO     | agent:__train_loop:210 - Episode [13200]	AverageReward: 0.340000	AverageStep: 10.835000	
+2022-07-10 15:03:51.758 | DEBUG    | agent:__train_loop:195 - Epoch [142000/1000000]	AverageLoss: 0.000934	
+2022-07-10 15:04:14.789 | DEBUG    | agent:__train_loop:195 - Epoch [144000/1000000]	AverageLoss: 0.001057	
+2022-07-10 15:04:15.538 | INFO     | agent:__train_loop:210 - Episode [13400]	AverageReward: 0.320000	AverageStep: 10.470000	
+2022-07-10 15:04:37.748 | DEBUG    | agent:__train_loop:195 - Epoch [146000/1000000]	AverageLoss: 0.000839	
+2022-07-10 15:04:40.039 | INFO     | agent:__train_loop:210 - Episode [13600]	AverageReward: 0.325000	AverageStep: 10.585000	
+2022-07-10 15:05:00.660 | DEBUG    | agent:__train_loop:195 - Epoch [148000/1000000]	AverageLoss: 0.000916	
+2022-07-10 15:05:05.425 | INFO     | agent:__train_loop:210 - Episode [13800]	AverageReward: 0.375000	AverageStep: 11.295000	
+2022-07-10 15:05:22.883 | DEBUG    | agent:__train_loop:195 - Epoch [150000/1000000]	AverageLoss: 0.000993	
+2022-07-10 15:05:30.592 | INFO     | agent:__train_loop:210 - Episode [14000]	AverageReward: 0.345000	AverageStep: 11.055000	
+2022-07-10 15:05:45.534 | DEBUG    | agent:__train_loop:195 - Epoch [152000/1000000]	AverageLoss: 0.000915	
+2022-07-10 15:05:56.034 | INFO     | agent:__train_loop:210 - Episode [14200]	AverageReward: 0.375000	AverageStep: 11.300000	
+2022-07-10 15:06:08.571 | DEBUG    | agent:__train_loop:195 - Epoch [154000/1000000]	AverageLoss: 0.001101	
+2022-07-10 15:06:20.792 | INFO     | agent:__train_loop:210 - Episode [14400]	AverageReward: 0.325000	AverageStep: 10.925000	
+2022-07-10 15:06:31.156 | DEBUG    | agent:__train_loop:195 - Epoch [156000/1000000]	AverageLoss: 0.001131	
+2022-07-10 15:06:44.042 | INFO     | agent:__train_loop:210 - Episode [14600]	AverageReward: 0.265000	AverageStep: 10.000000	
+2022-07-10 15:06:54.268 | DEBUG    | agent:__train_loop:195 - Epoch [158000/1000000]	AverageLoss: 0.001053	
+2022-07-10 15:07:08.616 | INFO     | agent:__train_loop:210 - Episode [14800]	AverageReward: 0.275000	AverageStep: 10.385000	
+2022-07-10 15:07:17.899 | DEBUG    | agent:__train_loop:195 - Epoch [160000/1000000]	AverageLoss: 0.001115	
+2022-07-10 15:07:34.237 | INFO     | agent:__train_loop:210 - Episode [15000]	AverageReward: 0.355000	AverageStep: 11.430000	
+2022-07-10 15:07:40.664 | DEBUG    | agent:__train_loop:195 - Epoch [162000/1000000]	AverageLoss: 0.000728	
+2022-07-10 15:07:57.928 | INFO     | agent:__train_loop:210 - Episode [15200]	AverageReward: 0.285000	AverageStep: 10.215000	
+2022-07-10 15:08:03.533 | DEBUG    | agent:__train_loop:195 - Epoch [164000/1000000]	AverageLoss: 0.001022	
+2022-07-10 15:08:21.751 | INFO     | agent:__train_loop:210 - Episode [15400]	AverageReward: 0.285000	AverageStep: 10.205000	
+2022-07-10 15:08:26.939 | DEBUG    | agent:__train_loop:195 - Epoch [166000/1000000]	AverageLoss: 0.000883	
+2022-07-10 15:08:45.968 | INFO     | agent:__train_loop:210 - Episode [15600]	AverageReward: 0.340000	AverageStep: 10.775000	
+2022-07-10 15:08:49.218 | DEBUG    | agent:__train_loop:195 - Epoch [168000/1000000]	AverageLoss: 0.000899	
+2022-07-10 15:09:10.541 | INFO     | agent:__train_loop:210 - Episode [15800]	AverageReward: 0.325000	AverageStep: 10.630000	
+2022-07-10 15:09:12.567 | DEBUG    | agent:__train_loop:195 - Epoch [170000/1000000]	AverageLoss: 0.000790	
+2022-07-10 15:09:35.444 | DEBUG    | agent:__train_loop:195 - Epoch [172000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:09:36.548 | INFO     | agent:__train_loop:210 - Episode [16000]	AverageReward: 0.370000	AverageStep: 11.320000	
+2022-07-10 15:09:57.799 | DEBUG    | agent:__train_loop:195 - Epoch [174000/1000000]	AverageLoss: 0.000775	
+2022-07-10 15:10:02.433 | INFO     | agent:__train_loop:210 - Episode [16200]	AverageReward: 0.385000	AverageStep: 11.500000	
+2022-07-10 15:10:20.509 | DEBUG    | agent:__train_loop:195 - Epoch [176000/1000000]	AverageLoss: 0.001146	
+2022-07-10 15:10:26.936 | INFO     | agent:__train_loop:210 - Episode [16400]	AverageReward: 0.325000	AverageStep: 10.650000	
+2022-07-10 15:10:43.453 | DEBUG    | agent:__train_loop:195 - Epoch [178000/1000000]	AverageLoss: 0.001162	
+2022-07-10 15:10:51.465 | INFO     | agent:__train_loop:210 - Episode [16600]	AverageReward: 0.330000	AverageStep: 10.780000	
+2022-07-10 15:11:07.172 | DEBUG    | agent:__train_loop:195 - Epoch [180000/1000000]	AverageLoss: 0.001162	
+2022-07-10 15:11:15.944 | INFO     | agent:__train_loop:210 - Episode [16800]	AverageReward: 0.305000	AverageStep: 10.350000	
+2022-07-10 15:11:30.257 | DEBUG    | agent:__train_loop:195 - Epoch [182000/1000000]	AverageLoss: 0.001022	
+2022-07-10 15:11:40.087 | INFO     | agent:__train_loop:210 - Episode [17000]	AverageReward: 0.325000	AverageStep: 10.570000	
+2022-07-10 15:11:52.137 | DEBUG    | agent:__train_loop:195 - Epoch [184000/1000000]	AverageLoss: 0.000945	
+2022-07-10 15:12:06.842 | INFO     | agent:__train_loop:210 - Episode [17200]	AverageReward: 0.430000	AverageStep: 12.115000	
+2022-07-10 15:12:15.533 | DEBUG    | agent:__train_loop:195 - Epoch [186000/1000000]	AverageLoss: 0.001022	
+2022-07-10 15:12:32.741 | INFO     | agent:__train_loop:210 - Episode [17400]	AverageReward: 0.370000	AverageStep: 11.430000	
+2022-07-10 15:12:37.953 | DEBUG    | agent:__train_loop:195 - Epoch [188000/1000000]	AverageLoss: 0.000852	
+2022-07-10 15:12:55.574 | INFO     | agent:__train_loop:210 - Episode [17600]	AverageReward: 0.235000	AverageStep: 9.545000	
+2022-07-10 15:13:01.584 | DEBUG    | agent:__train_loop:195 - Epoch [190000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:13:21.810 | INFO     | agent:__train_loop:210 - Episode [17800]	AverageReward: 0.400000	AverageStep: 11.635000	
+2022-07-10 15:13:24.060 | DEBUG    | agent:__train_loop:195 - Epoch [192000/1000000]	AverageLoss: 0.000852	
+2022-07-10 15:13:45.660 | INFO     | agent:__train_loop:210 - Episode [18000]	AverageReward: 0.290000	AverageStep: 10.185000	
+2022-07-10 15:13:47.435 | DEBUG    | agent:__train_loop:195 - Epoch [194000/1000000]	AverageLoss: 0.000914	
+2022-07-10 15:14:09.734 | INFO     | agent:__train_loop:210 - Episode [18200]	AverageReward: 0.325000	AverageStep: 10.660000	
+2022-07-10 15:14:09.924 | DEBUG    | agent:__train_loop:195 - Epoch [196000/1000000]	AverageLoss: 0.000929	
+2022-07-10 15:14:32.132 | DEBUG    | agent:__train_loop:195 - Epoch [198000/1000000]	AverageLoss: 0.000682	
+2022-07-10 15:14:35.779 | INFO     | agent:__train_loop:210 - Episode [18400]	AverageReward: 0.400000	AverageStep: 11.685000	
+2022-07-10 15:14:55.547 | DEBUG    | agent:__train_loop:195 - Epoch [200000/1000000]	AverageLoss: 0.000790	
+2022-07-10 15:15:00.540 | INFO     | agent:__train_loop:210 - Episode [18600]	AverageReward: 0.315000	AverageStep: 10.680000	
+2022-07-10 15:15:18.574 | DEBUG    | agent:__train_loop:195 - Epoch [202000/1000000]	AverageLoss: 0.000868	
+2022-07-10 15:15:25.037 | INFO     | agent:__train_loop:210 - Episode [18800]	AverageReward: 0.305000	AverageStep: 10.585000	
+2022-07-10 15:15:41.125 | DEBUG    | agent:__train_loop:195 - Epoch [204000/1000000]	AverageLoss: 0.000790	
+2022-07-10 15:15:51.364 | INFO     | agent:__train_loop:210 - Episode [19000]	AverageReward: 0.385000	AverageStep: 11.645000	
+2022-07-10 15:16:04.775 | DEBUG    | agent:__train_loop:195 - Epoch [206000/1000000]	AverageLoss: 0.001100	
+2022-07-10 15:16:15.277 | INFO     | agent:__train_loop:210 - Episode [19200]	AverageReward: 0.275000	AverageStep: 9.920000	
+2022-07-10 15:16:28.784 | DEBUG    | agent:__train_loop:195 - Epoch [208000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:16:39.204 | INFO     | agent:__train_loop:210 - Episode [19400]	AverageReward: 0.285000	AverageStep: 10.020000	
+2022-07-10 15:16:51.892 | DEBUG    | agent:__train_loop:195 - Epoch [210000/1000000]	AverageLoss: 0.000759	
+2022-07-10 15:17:04.232 | INFO     | agent:__train_loop:210 - Episode [19600]	AverageReward: 0.345000	AverageStep: 10.935000	
+2022-07-10 15:17:14.574 | DEBUG    | agent:__train_loop:195 - Epoch [212000/1000000]	AverageLoss: 0.001115	
+2022-07-10 15:17:29.347 | INFO     | agent:__train_loop:210 - Episode [19800]	AverageReward: 0.360000	AverageStep: 11.165000	
+2022-07-10 15:17:37.835 | DEBUG    | agent:__train_loop:195 - Epoch [214000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:17:54.842 | INFO     | agent:__train_loop:210 - Episode [20000]	AverageReward: 0.370000	AverageStep: 11.160000	
+2022-07-10 15:18:00.110 | DEBUG    | agent:__train_loop:195 - Epoch [216000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:18:18.655 | INFO     | agent:__train_loop:210 - Episode [20200]	AverageReward: 0.260000	AverageStep: 9.975000	
+2022-07-10 15:18:23.909 | DEBUG    | agent:__train_loop:195 - Epoch [218000/1000000]	AverageLoss: 0.001115	
+2022-07-10 15:18:44.812 | INFO     | agent:__train_loop:210 - Episode [20400]	AverageReward: 0.390000	AverageStep: 11.550000	
+2022-07-10 15:18:46.536 | DEBUG    | agent:__train_loop:195 - Epoch [220000/1000000]	AverageLoss: 0.000883	
+2022-07-10 15:19:09.173 | DEBUG    | agent:__train_loop:195 - Epoch [222000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:19:11.019 | INFO     | agent:__train_loop:210 - Episode [20600]	AverageReward: 0.375000	AverageStep: 11.615000	
+2022-07-10 15:19:32.101 | DEBUG    | agent:__train_loop:195 - Epoch [224000/1000000]	AverageLoss: 0.000868	
+2022-07-10 15:19:36.948 | INFO     | agent:__train_loop:210 - Episode [20800]	AverageReward: 0.365000	AverageStep: 11.275000	
+2022-07-10 15:19:54.406 | DEBUG    | agent:__train_loop:195 - Epoch [226000/1000000]	AverageLoss: 0.001146	
+2022-07-10 15:20:02.541 | INFO     | agent:__train_loop:210 - Episode [21000]	AverageReward: 0.385000	AverageStep: 11.355000	
+2022-07-10 15:20:18.052 | DEBUG    | agent:__train_loop:195 - Epoch [228000/1000000]	AverageLoss: 0.001053	
+2022-07-10 15:20:26.587 | INFO     | agent:__train_loop:210 - Episode [21200]	AverageReward: 0.300000	AverageStep: 10.315000	
+2022-07-10 15:20:41.195 | DEBUG    | agent:__train_loop:195 - Epoch [230000/1000000]	AverageLoss: 0.000821	
+2022-07-10 15:20:51.585 | INFO     | agent:__train_loop:210 - Episode [21400]	AverageReward: 0.345000	AverageStep: 10.900000	
+2022-07-10 15:21:03.902 | DEBUG    | agent:__train_loop:195 - Epoch [232000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:21:16.424 | INFO     | agent:__train_loop:210 - Episode [21600]	AverageReward: 0.340000	AverageStep: 10.760000	
+2022-07-10 15:21:27.676 | DEBUG    | agent:__train_loop:195 - Epoch [234000/1000000]	AverageLoss: 0.000960	
+2022-07-10 15:21:39.789 | INFO     | agent:__train_loop:210 - Episode [21800]	AverageReward: 0.250000	AverageStep: 9.460000	
+2022-07-10 15:21:51.658 | DEBUG    | agent:__train_loop:195 - Epoch [236000/1000000]	AverageLoss: 0.001069	
+2022-07-10 15:22:04.039 | INFO     | agent:__train_loop:210 - Episode [22000]	AverageReward: 0.305000	AverageStep: 10.395000	
+2022-07-10 15:22:15.021 | DEBUG    | agent:__train_loop:195 - Epoch [238000/1000000]	AverageLoss: 0.000837	
+2022-07-10 15:22:28.765 | INFO     | agent:__train_loop:210 - Episode [22200]	AverageReward: 0.315000	AverageStep: 10.865000	
+2022-07-10 15:22:38.263 | DEBUG    | agent:__train_loop:195 - Epoch [240000/1000000]	AverageLoss: 0.000991	
+2022-07-10 15:22:53.371 | INFO     | agent:__train_loop:210 - Episode [22400]	AverageReward: 0.280000	AverageStep: 10.270000	
+2022-07-10 15:23:02.259 | DEBUG    | agent:__train_loop:195 - Epoch [242000/1000000]	AverageLoss: 0.000744	
+2022-07-10 15:23:19.123 | INFO     | agent:__train_loop:210 - Episode [22600]	AverageReward: 0.355000	AverageStep: 11.080000	
+2022-07-10 15:23:24.513 | DEBUG    | agent:__train_loop:195 - Epoch [244000/1000000]	AverageLoss: 0.000991	
+2022-07-10 15:23:44.423 | INFO     | agent:__train_loop:210 - Episode [22800]	AverageReward: 0.365000	AverageStep: 11.095000	
+2022-07-10 15:23:47.664 | DEBUG    | agent:__train_loop:195 - Epoch [246000/1000000]	AverageLoss: 0.000744	
+2022-07-10 15:24:09.106 | INFO     | agent:__train_loop:210 - Episode [23000]	AverageReward: 0.305000	AverageStep: 10.560000	
+2022-07-10 15:24:11.362 | DEBUG    | agent:__train_loop:195 - Epoch [248000/1000000]	AverageLoss: 0.000821	
+2022-07-10 15:24:33.394 | INFO     | agent:__train_loop:210 - Episode [23200]	AverageReward: 0.290000	AverageStep: 10.010000	
+2022-07-10 15:24:35.570 | DEBUG    | agent:__train_loop:195 - Epoch [250000/1000000]	AverageLoss: 0.000899	
+2022-07-10 15:24:58.253 | INFO     | agent:__train_loop:210 - Episode [23400]	AverageReward: 0.310000	AverageStep: 10.460000	
+2022-07-10 15:24:59.114 | DEBUG    | agent:__train_loop:195 - Epoch [252000/1000000]	AverageLoss: 0.000697	
+2022-07-10 15:25:21.675 | DEBUG    | agent:__train_loop:195 - Epoch [254000/1000000]	AverageLoss: 0.001177	
+2022-07-10 15:25:24.172 | INFO     | agent:__train_loop:210 - Episode [23600]	AverageReward: 0.375000	AverageStep: 11.420000	
+2022-07-10 15:25:45.030 | DEBUG    | agent:__train_loop:195 - Epoch [256000/1000000]	AverageLoss: 0.000929	
+2022-07-10 15:25:48.044 | INFO     | agent:__train_loop:210 - Episode [23800]	AverageReward: 0.275000	AverageStep: 10.175000	
+2022-07-10 15:26:08.692 | DEBUG    | agent:__train_loop:195 - Epoch [258000/1000000]	AverageLoss: 0.000929	
+2022-07-10 15:26:12.035 | INFO     | agent:__train_loop:210 - Episode [24000]	AverageReward: 0.300000	AverageStep: 10.120000	
+2022-07-10 15:26:32.316 | DEBUG    | agent:__train_loop:195 - Epoch [260000/1000000]	AverageLoss: 0.000945	
+2022-07-10 15:26:37.038 | INFO     | agent:__train_loop:210 - Episode [24200]	AverageReward: 0.330000	AverageStep: 10.590000	
+2022-07-10 15:26:55.170 | DEBUG    | agent:__train_loop:195 - Epoch [262000/1000000]	AverageLoss: 0.000929	
+2022-07-10 15:27:03.461 | INFO     | agent:__train_loop:210 - Episode [24400]	AverageReward: 0.420000	AverageStep: 11.780000	
+2022-07-10 15:27:18.314 | DEBUG    | agent:__train_loop:195 - Epoch [264000/1000000]	AverageLoss: 0.000945	
+2022-07-10 15:27:28.366 | INFO     | agent:__train_loop:210 - Episode [24600]	AverageReward: 0.320000	AverageStep: 10.785000	
+2022-07-10 15:27:41.153 | DEBUG    | agent:__train_loop:195 - Epoch [266000/1000000]	AverageLoss: 0.001038	
+2022-07-10 15:27:53.622 | INFO     | agent:__train_loop:210 - Episode [24800]	AverageReward: 0.360000	AverageStep: 11.135000	
+2022-07-10 15:28:03.836 | DEBUG    | agent:__train_loop:195 - Epoch [268000/1000000]	AverageLoss: 0.000852	
+2022-07-10 15:28:20.201 | INFO     | agent:__train_loop:210 - Episode [25000]	AverageReward: 0.405000	AverageStep: 11.570000	
+2022-07-10 15:28:26.733 | DEBUG    | agent:__train_loop:195 - Epoch [270000/1000000]	AverageLoss: 0.000929	
+2022-07-10 15:28:44.836 | INFO     | agent:__train_loop:210 - Episode [25200]	AverageReward: 0.325000	AverageStep: 10.695000	
+2022-07-10 15:28:49.541 | DEBUG    | agent:__train_loop:195 - Epoch [272000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:29:09.114 | INFO     | agent:__train_loop:210 - Episode [25400]	AverageReward: 0.310000	AverageStep: 10.260000	
+2022-07-10 15:29:13.757 | DEBUG    | agent:__train_loop:195 - Epoch [274000/1000000]	AverageLoss: 0.001100	
+2022-07-10 15:29:32.826 | INFO     | agent:__train_loop:210 - Episode [25600]	AverageReward: 0.245000	AverageStep: 9.880000	
+2022-07-10 15:29:37.295 | DEBUG    | agent:__train_loop:195 - Epoch [276000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:29:57.318 | INFO     | agent:__train_loop:210 - Episode [25800]	AverageReward: 0.315000	AverageStep: 10.510000	
+2022-07-10 15:30:00.900 | DEBUG    | agent:__train_loop:195 - Epoch [278000/1000000]	AverageLoss: 0.001100	
+2022-07-10 15:30:21.873 | INFO     | agent:__train_loop:210 - Episode [26000]	AverageReward: 0.305000	AverageStep: 10.410000	
+2022-07-10 15:30:24.119 | DEBUG    | agent:__train_loop:195 - Epoch [280000/1000000]	AverageLoss: 0.000960	
+2022-07-10 15:30:47.416 | INFO     | agent:__train_loop:210 - Episode [26200]	AverageReward: 0.345000	AverageStep: 10.990000	
+2022-07-10 15:30:47.545 | DEBUG    | agent:__train_loop:195 - Epoch [282000/1000000]	AverageLoss: 0.000909	
+2022-07-10 15:31:10.730 | DEBUG    | agent:__train_loop:195 - Epoch [284000/1000000]	AverageLoss: 0.000868	
+2022-07-10 15:31:12.673 | INFO     | agent:__train_loop:210 - Episode [26400]	AverageReward: 0.335000	AverageStep: 10.825000	
+2022-07-10 15:31:33.836 | DEBUG    | agent:__train_loop:195 - Epoch [286000/1000000]	AverageLoss: 0.000960	
+2022-07-10 15:31:38.022 | INFO     | agent:__train_loop:210 - Episode [26600]	AverageReward: 0.350000	AverageStep: 10.875000	
+2022-07-10 15:31:57.531 | DEBUG    | agent:__train_loop:195 - Epoch [288000/1000000]	AverageLoss: 0.001131	
+2022-07-10 15:32:02.770 | INFO     | agent:__train_loop:210 - Episode [26800]	AverageReward: 0.320000	AverageStep: 10.560000	
+2022-07-10 15:32:21.219 | DEBUG    | agent:__train_loop:195 - Epoch [290000/1000000]	AverageLoss: 0.000991	
+2022-07-10 15:32:27.243 | INFO     | agent:__train_loop:210 - Episode [27000]	AverageReward: 0.295000	AverageStep: 10.330000	
+2022-07-10 15:32:45.036 | DEBUG    | agent:__train_loop:195 - Epoch [292000/1000000]	AverageLoss: 0.000898	
+2022-07-10 15:32:53.083 | INFO     | agent:__train_loop:210 - Episode [27200]	AverageReward: 0.325000	AverageStep: 10.805000	
+2022-07-10 15:33:08.534 | DEBUG    | agent:__train_loop:195 - Epoch [294000/1000000]	AverageLoss: 0.000806	
+2022-07-10 15:33:19.541 | INFO     | agent:__train_loop:210 - Episode [27400]	AverageReward: 0.370000	AverageStep: 11.525000	
+2022-07-10 15:33:31.639 | DEBUG    | agent:__train_loop:195 - Epoch [296000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:33:45.116 | INFO     | agent:__train_loop:210 - Episode [27600]	AverageReward: 0.350000	AverageStep: 11.150000	
+2022-07-10 15:33:54.520 | DEBUG    | agent:__train_loop:195 - Epoch [298000/1000000]	AverageLoss: 0.000898	
+2022-07-10 15:34:10.320 | INFO     | agent:__train_loop:210 - Episode [27800]	AverageReward: 0.335000	AverageStep: 10.755000	
+2022-07-10 15:34:17.666 | DEBUG    | agent:__train_loop:195 - Epoch [300000/1000000]	AverageLoss: 0.000806	
+2022-07-10 15:34:36.590 | INFO     | agent:__train_loop:210 - Episode [28000]	AverageReward: 0.405000	AverageStep: 11.735000	
+2022-07-10 15:34:40.082 | DEBUG    | agent:__train_loop:195 - Epoch [302000/1000000]	AverageLoss: 0.000930	
+2022-07-10 15:35:03.025 | INFO     | agent:__train_loop:210 - Episode [28200]	AverageReward: 0.390000	AverageStep: 11.365000	
+2022-07-10 15:35:03.236 | DEBUG    | agent:__train_loop:195 - Epoch [304000/1000000]	AverageLoss: 0.000744	
+2022-07-10 15:35:27.042 | INFO     | agent:__train_loop:210 - Episode [28400]	AverageReward: 0.275000	AverageStep: 9.860000	
+2022-07-10 15:35:27.590 | DEBUG    | agent:__train_loop:195 - Epoch [306000/1000000]	AverageLoss: 0.000991	
+2022-07-10 15:35:50.112 | DEBUG    | agent:__train_loop:195 - Epoch [308000/1000000]	AverageLoss: 0.001038	
+2022-07-10 15:35:51.700 | INFO     | agent:__train_loop:210 - Episode [28600]	AverageReward: 0.325000	AverageStep: 10.900000	
+2022-07-10 15:36:14.182 | DEBUG    | agent:__train_loop:195 - Epoch [310000/1000000]	AverageLoss: 0.001053	
+2022-07-10 15:36:15.602 | INFO     | agent:__train_loop:210 - Episode [28800]	AverageReward: 0.260000	AverageStep: 9.850000	
+2022-07-10 15:36:37.638 | DEBUG    | agent:__train_loop:195 - Epoch [312000/1000000]	AverageLoss: 0.001022	
+2022-07-10 15:36:40.614 | INFO     | agent:__train_loop:210 - Episode [29000]	AverageReward: 0.335000	AverageStep: 10.840000	
+2022-07-10 15:37:01.091 | DEBUG    | agent:__train_loop:195 - Epoch [314000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:37:05.387 | INFO     | agent:__train_loop:210 - Episode [29200]	AverageReward: 0.305000	AverageStep: 10.460000	
+2022-07-10 15:37:24.176 | DEBUG    | agent:__train_loop:195 - Epoch [316000/1000000]	AverageLoss: 0.000883	
+2022-07-10 15:37:30.536 | INFO     | agent:__train_loop:210 - Episode [29400]	AverageReward: 0.330000	AverageStep: 10.735000	
+2022-07-10 15:37:47.634 | DEBUG    | agent:__train_loop:195 - Epoch [318000/1000000]	AverageLoss: 0.001084	
+2022-07-10 15:37:57.033 | INFO     | agent:__train_loop:210 - Episode [29600]	AverageReward: 0.400000	AverageStep: 11.620000	
+2022-07-10 15:38:11.125 | DEBUG    | agent:__train_loop:195 - Epoch [320000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:38:22.044 | INFO     | agent:__train_loop:210 - Episode [29800]	AverageReward: 0.300000	AverageStep: 10.430000	
+2022-07-10 15:38:35.228 | DEBUG    | agent:__train_loop:195 - Epoch [322000/1000000]	AverageLoss: 0.000960	
+2022-07-10 15:38:46.607 | INFO     | agent:__train_loop:210 - Episode [30000]	AverageReward: 0.315000	AverageStep: 10.495000	
+2022-07-10 15:38:58.357 | DEBUG    | agent:__train_loop:195 - Epoch [324000/1000000]	AverageLoss: 0.000914	
+2022-07-10 15:39:10.537 | INFO     | agent:__train_loop:210 - Episode [30200]	AverageReward: 0.290000	AverageStep: 9.980000	
+2022-07-10 15:39:22.250 | DEBUG    | agent:__train_loop:195 - Epoch [326000/1000000]	AverageLoss: 0.000960	
+2022-07-10 15:39:35.034 | INFO     | agent:__train_loop:210 - Episode [30400]	AverageReward: 0.345000	AverageStep: 10.585000	
+2022-07-10 15:39:44.804 | DEBUG    | agent:__train_loop:195 - Epoch [328000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:39:59.344 | INFO     | agent:__train_loop:210 - Episode [30600]	AverageReward: 0.315000	AverageStep: 10.515000	
+2022-07-10 15:40:08.562 | DEBUG    | agent:__train_loop:195 - Epoch [330000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:40:24.807 | INFO     | agent:__train_loop:210 - Episode [30800]	AverageReward: 0.340000	AverageStep: 10.875000	
+2022-07-10 15:40:31.551 | DEBUG    | agent:__train_loop:195 - Epoch [332000/1000000]	AverageLoss: 0.000898	
+2022-07-10 15:40:49.772 | INFO     | agent:__train_loop:210 - Episode [31000]	AverageReward: 0.360000	AverageStep: 10.770000	
+2022-07-10 15:40:55.127 | DEBUG    | agent:__train_loop:195 - Epoch [334000/1000000]	AverageLoss: 0.000821	
+2022-07-10 15:41:14.565 | INFO     | agent:__train_loop:210 - Episode [31200]	AverageReward: 0.305000	AverageStep: 10.365000	
+2022-07-10 15:41:18.845 | DEBUG    | agent:__train_loop:195 - Epoch [336000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:41:40.806 | INFO     | agent:__train_loop:210 - Episode [31400]	AverageReward: 0.390000	AverageStep: 11.295000	
+2022-07-10 15:41:42.382 | DEBUG    | agent:__train_loop:195 - Epoch [338000/1000000]	AverageLoss: 0.000960	
+2022-07-10 15:42:05.103 | DEBUG    | agent:__train_loop:195 - Epoch [340000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:42:07.051 | INFO     | agent:__train_loop:210 - Episode [31600]	AverageReward: 0.375000	AverageStep: 11.415000	
+2022-07-10 15:42:28.922 | DEBUG    | agent:__train_loop:195 - Epoch [342000/1000000]	AverageLoss: 0.000929	
+2022-07-10 15:42:31.279 | INFO     | agent:__train_loop:210 - Episode [31800]	AverageReward: 0.305000	AverageStep: 10.170000	
+2022-07-10 15:42:51.725 | DEBUG    | agent:__train_loop:195 - Epoch [344000/1000000]	AverageLoss: 0.001084	
+2022-07-10 15:42:58.561 | INFO     | agent:__train_loop:210 - Episode [32000]	AverageReward: 0.415000	AverageStep: 12.050000	
+2022-07-10 15:43:14.264 | DEBUG    | agent:__train_loop:195 - Epoch [346000/1000000]	AverageLoss: 0.000929	
+2022-07-10 15:43:24.220 | INFO     | agent:__train_loop:210 - Episode [32200]	AverageReward: 0.365000	AverageStep: 11.240000	
+2022-07-10 15:43:37.307 | DEBUG    | agent:__train_loop:195 - Epoch [348000/1000000]	AverageLoss: 0.001022	
+2022-07-10 15:43:49.083 | INFO     | agent:__train_loop:210 - Episode [32400]	AverageReward: 0.305000	AverageStep: 10.670000	
+2022-07-10 15:44:00.708 | DEBUG    | agent:__train_loop:195 - Epoch [350000/1000000]	AverageLoss: 0.001100	
+2022-07-10 15:44:13.441 | INFO     | agent:__train_loop:210 - Episode [32600]	AverageReward: 0.305000	AverageStep: 10.275000	
+2022-07-10 15:44:24.791 | DEBUG    | agent:__train_loop:195 - Epoch [352000/1000000]	AverageLoss: 0.000898	
+2022-07-10 15:44:38.955 | INFO     | agent:__train_loop:210 - Episode [32800]	AverageReward: 0.335000	AverageStep: 10.530000	
+2022-07-10 15:44:49.049 | DEBUG    | agent:__train_loop:195 - Epoch [354000/1000000]	AverageLoss: 0.001069	
+2022-07-10 15:45:03.685 | INFO     | agent:__train_loop:210 - Episode [33000]	AverageReward: 0.300000	AverageStep: 10.275000	
+2022-07-10 15:45:13.367 | DEBUG    | agent:__train_loop:195 - Epoch [356000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:45:27.554 | INFO     | agent:__train_loop:210 - Episode [33200]	AverageReward: 0.250000	AverageStep: 9.695000	
+2022-07-10 15:45:37.547 | DEBUG    | agent:__train_loop:195 - Epoch [358000/1000000]	AverageLoss: 0.000898	
+2022-07-10 15:45:51.879 | INFO     | agent:__train_loop:210 - Episode [33400]	AverageReward: 0.285000	AverageStep: 10.185000	
+2022-07-10 15:46:01.535 | DEBUG    | agent:__train_loop:195 - Epoch [360000/1000000]	AverageLoss: 0.001131	
+2022-07-10 15:46:16.461 | INFO     | agent:__train_loop:210 - Episode [33600]	AverageReward: 0.300000	AverageStep: 10.290000	
+2022-07-10 15:46:25.597 | DEBUG    | agent:__train_loop:195 - Epoch [362000/1000000]	AverageLoss: 0.000914	
+2022-07-10 15:46:41.387 | INFO     | agent:__train_loop:210 - Episode [33800]	AverageReward: 0.320000	AverageStep: 10.470000	
+2022-07-10 15:46:49.215 | DEBUG    | agent:__train_loop:195 - Epoch [364000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:47:07.092 | INFO     | agent:__train_loop:210 - Episode [34000]	AverageReward: 0.355000	AverageStep: 11.080000	
+2022-07-10 15:47:12.696 | DEBUG    | agent:__train_loop:195 - Epoch [366000/1000000]	AverageLoss: 0.000852	
+2022-07-10 15:47:33.827 | INFO     | agent:__train_loop:210 - Episode [34200]	AverageReward: 0.375000	AverageStep: 11.320000	
+2022-07-10 15:47:35.855 | DEBUG    | agent:__train_loop:195 - Epoch [368000/1000000]	AverageLoss: 0.000806	
+2022-07-10 15:47:59.329 | INFO     | agent:__train_loop:210 - Episode [34400]	AverageReward: 0.320000	AverageStep: 10.750000	
+2022-07-10 15:47:59.703 | DEBUG    | agent:__train_loop:195 - Epoch [370000/1000000]	AverageLoss: 0.001038	
+2022-07-10 15:48:22.688 | DEBUG    | agent:__train_loop:195 - Epoch [372000/1000000]	AverageLoss: 0.000837	
+2022-07-10 15:48:24.794 | INFO     | agent:__train_loop:210 - Episode [34600]	AverageReward: 0.350000	AverageStep: 11.055000	
+2022-07-10 15:48:46.946 | DEBUG    | agent:__train_loop:195 - Epoch [374000/1000000]	AverageLoss: 0.001084	
+2022-07-10 15:48:47.873 | INFO     | agent:__train_loop:210 - Episode [34800]	AverageReward: 0.250000	AverageStep: 9.425000	
+2022-07-10 15:49:11.294 | DEBUG    | agent:__train_loop:195 - Epoch [376000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:49:12.161 | INFO     | agent:__train_loop:210 - Episode [35000]	AverageReward: 0.270000	AverageStep: 10.000000	
+2022-07-10 15:49:35.074 | DEBUG    | agent:__train_loop:195 - Epoch [378000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:49:36.883 | INFO     | agent:__train_loop:210 - Episode [35200]	AverageReward: 0.305000	AverageStep: 10.355000	
+2022-07-10 15:50:00.544 | DEBUG    | agent:__train_loop:195 - Epoch [380000/1000000]	AverageLoss: 0.001038	
+2022-07-10 15:50:01.609 | INFO     | agent:__train_loop:210 - Episode [35400]	AverageReward: 0.265000	AverageStep: 9.775000	
+2022-07-10 15:50:23.779 | DEBUG    | agent:__train_loop:195 - Epoch [382000/1000000]	AverageLoss: 0.001100	
+2022-07-10 15:50:28.541 | INFO     | agent:__train_loop:210 - Episode [35600]	AverageReward: 0.365000	AverageStep: 11.390000	
+2022-07-10 15:50:47.626 | DEBUG    | agent:__train_loop:195 - Epoch [384000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:50:54.271 | INFO     | agent:__train_loop:210 - Episode [35800]	AverageReward: 0.355000	AverageStep: 10.885000	
+2022-07-10 15:51:11.325 | DEBUG    | agent:__train_loop:195 - Epoch [386000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:51:19.775 | INFO     | agent:__train_loop:210 - Episode [36000]	AverageReward: 0.345000	AverageStep: 10.860000	
+2022-07-10 15:51:34.378 | DEBUG    | agent:__train_loop:195 - Epoch [388000/1000000]	AverageLoss: 0.000991	
+2022-07-10 15:51:47.635 | INFO     | agent:__train_loop:210 - Episode [36200]	AverageReward: 0.445000	AverageStep: 12.365000	
+2022-07-10 15:51:56.881 | DEBUG    | agent:__train_loop:195 - Epoch [390000/1000000]	AverageLoss: 0.000945	
+2022-07-10 15:52:13.170 | INFO     | agent:__train_loop:210 - Episode [36400]	AverageReward: 0.340000	AverageStep: 11.030000	
+2022-07-10 15:52:20.044 | DEBUG    | agent:__train_loop:195 - Epoch [392000/1000000]	AverageLoss: 0.001038	
+2022-07-10 15:52:38.704 | INFO     | agent:__train_loop:210 - Episode [36600]	AverageReward: 0.355000	AverageStep: 10.985000	
+2022-07-10 15:52:43.761 | DEBUG    | agent:__train_loop:195 - Epoch [394000/1000000]	AverageLoss: 0.000991	
+2022-07-10 15:53:03.042 | INFO     | agent:__train_loop:210 - Episode [36800]	AverageReward: 0.300000	AverageStep: 10.225000	
+2022-07-10 15:53:07.455 | DEBUG    | agent:__train_loop:195 - Epoch [396000/1000000]	AverageLoss: 0.001022	
+2022-07-10 15:53:26.162 | INFO     | agent:__train_loop:210 - Episode [37000]	AverageReward: 0.245000	AverageStep: 9.510000	
+2022-07-10 15:53:32.179 | DEBUG    | agent:__train_loop:195 - Epoch [398000/1000000]	AverageLoss: 0.001022	
+2022-07-10 15:53:52.284 | INFO     | agent:__train_loop:210 - Episode [37200]	AverageReward: 0.330000	AverageStep: 10.710000	
+2022-07-10 15:53:56.166 | DEBUG    | agent:__train_loop:195 - Epoch [400000/1000000]	AverageLoss: 0.000852	
+2022-07-10 15:54:17.296 | INFO     | agent:__train_loop:210 - Episode [37400]	AverageReward: 0.310000	AverageStep: 10.510000	
+2022-07-10 15:54:19.846 | DEBUG    | agent:__train_loop:195 - Epoch [402000/1000000]	AverageLoss: 0.000914	
+2022-07-10 15:54:41.556 | INFO     | agent:__train_loop:210 - Episode [37600]	AverageReward: 0.260000	AverageStep: 9.995000	
+2022-07-10 15:54:44.133 | DEBUG    | agent:__train_loop:195 - Epoch [404000/1000000]	AverageLoss: 0.000914	
+2022-07-10 15:55:06.905 | INFO     | agent:__train_loop:210 - Episode [37800]	AverageReward: 0.340000	AverageStep: 10.680000	
+2022-07-10 15:55:07.724 | DEBUG    | agent:__train_loop:195 - Epoch [406000/1000000]	AverageLoss: 0.000991	
+2022-07-10 15:55:31.231 | DEBUG    | agent:__train_loop:195 - Epoch [408000/1000000]	AverageLoss: 0.000898	
+2022-07-10 15:55:32.412 | INFO     | agent:__train_loop:210 - Episode [38000]	AverageReward: 0.355000	AverageStep: 10.885000	
+2022-07-10 15:55:54.105 | DEBUG    | agent:__train_loop:195 - Epoch [410000/1000000]	AverageLoss: 0.001162	
+2022-07-10 15:55:58.535 | INFO     | agent:__train_loop:210 - Episode [38200]	AverageReward: 0.385000	AverageStep: 11.350000	
+2022-07-10 15:56:17.316 | DEBUG    | agent:__train_loop:195 - Epoch [412000/1000000]	AverageLoss: 0.001131	
+2022-07-10 15:56:25.419 | INFO     | agent:__train_loop:210 - Episode [38400]	AverageReward: 0.395000	AverageStep: 11.780000	
+2022-07-10 15:56:40.186 | DEBUG    | agent:__train_loop:195 - Epoch [414000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:56:52.232 | INFO     | agent:__train_loop:210 - Episode [38600]	AverageReward: 0.395000	AverageStep: 11.445000	
+2022-07-10 15:57:04.043 | DEBUG    | agent:__train_loop:195 - Epoch [416000/1000000]	AverageLoss: 0.001115	
+2022-07-10 15:57:17.293 | INFO     | agent:__train_loop:210 - Episode [38800]	AverageReward: 0.320000	AverageStep: 10.675000	
+2022-07-10 15:57:26.750 | DEBUG    | agent:__train_loop:195 - Epoch [418000/1000000]	AverageLoss: 0.001007	
+2022-07-10 15:57:43.959 | INFO     | agent:__train_loop:210 - Episode [39000]	AverageReward: 0.430000	AverageStep: 11.720000	
+2022-07-10 15:57:49.859 | DEBUG    | agent:__train_loop:195 - Epoch [420000/1000000]	AverageLoss: 0.000929	
+2022-07-10 15:58:09.548 | INFO     | agent:__train_loop:210 - Episode [39200]	AverageReward: 0.330000	AverageStep: 10.780000	
+2022-07-10 15:58:13.601 | DEBUG    | agent:__train_loop:195 - Epoch [422000/1000000]	AverageLoss: 0.001131	
+2022-07-10 15:58:35.608 | INFO     | agent:__train_loop:210 - Episode [39400]	AverageReward: 0.380000	AverageStep: 11.235000	
+2022-07-10 15:58:36.866 | DEBUG    | agent:__train_loop:195 - Epoch [424000/1000000]	AverageLoss: 0.001022	
+2022-07-10 15:58:59.810 | DEBUG    | agent:__train_loop:195 - Epoch [426000/1000000]	AverageLoss: 0.000976	
+2022-07-10 15:59:01.838 | INFO     | agent:__train_loop:210 - Episode [39600]	AverageReward: 0.350000	AverageStep: 11.240000	
+2022-07-10 15:59:23.195 | DEBUG    | agent:__train_loop:195 - Epoch [428000/1000000]	AverageLoss: 0.001131	
+2022-07-10 15:59:26.894 | INFO     | agent:__train_loop:210 - Episode [39800]	AverageReward: 0.335000	AverageStep: 10.660000	
+2022-07-10 15:59:46.735 | DEBUG    | agent:__train_loop:195 - Epoch [430000/1000000]	AverageLoss: 0.001022	
+2022-07-10 15:59:53.609 | INFO     | agent:__train_loop:210 - Episode [40000]	AverageReward: 0.410000	AverageStep: 11.640000	
+2022-07-10 16:00:10.739 | DEBUG    | agent:__train_loop:195 - Epoch [432000/1000000]	AverageLoss: 0.001193	
+2022-07-10 16:00:18.372 | INFO     | agent:__train_loop:210 - Episode [40200]	AverageReward: 0.310000	AverageStep: 10.295000	
+2022-07-10 16:00:34.428 | DEBUG    | agent:__train_loop:195 - Epoch [434000/1000000]	AverageLoss: 0.001177	
+2022-07-10 16:00:42.550 | INFO     | agent:__train_loop:210 - Episode [40400]	AverageReward: 0.310000	AverageStep: 10.030000	
+2022-07-10 16:00:58.367 | DEBUG    | agent:__train_loop:195 - Epoch [436000/1000000]	AverageLoss: 0.001084	
+2022-07-10 16:01:07.327 | INFO     | agent:__train_loop:210 - Episode [40600]	AverageReward: 0.320000	AverageStep: 10.430000	
+2022-07-10 16:01:22.220 | DEBUG    | agent:__train_loop:195 - Epoch [438000/1000000]	AverageLoss: 0.000914	
+2022-07-10 16:01:33.352 | INFO     | agent:__train_loop:210 - Episode [40800]	AverageReward: 0.345000	AverageStep: 10.985000	
+2022-07-10 16:01:45.852 | DEBUG    | agent:__train_loop:195 - Epoch [440000/1000000]	AverageLoss: 0.000991	
+2022-07-10 16:01:58.689 | INFO     | agent:__train_loop:210 - Episode [41000]	AverageReward: 0.355000	AverageStep: 10.725000	
+2022-07-10 16:02:09.217 | DEBUG    | agent:__train_loop:195 - Epoch [442000/1000000]	AverageLoss: 0.000914	
+2022-07-10 16:02:25.041 | INFO     | agent:__train_loop:210 - Episode [41200]	AverageReward: 0.365000	AverageStep: 11.265000	
+2022-07-10 16:02:32.696 | DEBUG    | agent:__train_loop:195 - Epoch [444000/1000000]	AverageLoss: 0.001162	
+2022-07-10 16:02:51.218 | INFO     | agent:__train_loop:210 - Episode [41400]	AverageReward: 0.355000	AverageStep: 11.115000	
+2022-07-10 16:02:56.583 | DEBUG    | agent:__train_loop:195 - Epoch [446000/1000000]	AverageLoss: 0.000960	
+2022-07-10 16:03:16.543 | INFO     | agent:__train_loop:210 - Episode [41600]	AverageReward: 0.325000	AverageStep: 10.615000	
+2022-07-10 16:03:20.082 | DEBUG    | agent:__train_loop:195 - Epoch [448000/1000000]	AverageLoss: 0.000945	
+2022-07-10 16:03:41.133 | INFO     | agent:__train_loop:210 - Episode [41800]	AverageReward: 0.310000	AverageStep: 10.165000	
+2022-07-10 16:03:44.383 | DEBUG    | agent:__train_loop:195 - Epoch [450000/1000000]	AverageLoss: 0.000960	
+2022-07-10 16:04:07.047 | INFO     | agent:__train_loop:210 - Episode [42000]	AverageReward: 0.360000	AverageStep: 11.110000	
+2022-07-10 16:04:07.803 | DEBUG    | agent:__train_loop:195 - Epoch [452000/1000000]	AverageLoss: 0.001007	
+2022-07-10 16:04:31.100 | DEBUG    | agent:__train_loop:195 - Epoch [454000/1000000]	AverageLoss: 0.000867	
+2022-07-10 16:04:32.076 | INFO     | agent:__train_loop:210 - Episode [42200]	AverageReward: 0.325000	AverageStep: 10.655000	
+2022-07-10 16:04:55.438 | DEBUG    | agent:__train_loop:195 - Epoch [456000/1000000]	AverageLoss: 0.001008	
+2022-07-10 16:04:57.092 | INFO     | agent:__train_loop:210 - Episode [42400]	AverageReward: 0.305000	AverageStep: 10.210000	
+2022-07-10 16:05:18.782 | DEBUG    | agent:__train_loop:195 - Epoch [458000/1000000]	AverageLoss: 0.000728	
+2022-07-10 16:05:23.282 | INFO     | agent:__train_loop:210 - Episode [42600]	AverageReward: 0.390000	AverageStep: 11.350000	
+2022-07-10 16:05:41.785 | DEBUG    | agent:__train_loop:195 - Epoch [460000/1000000]	AverageLoss: 0.001146	
+2022-07-10 16:05:49.433 | INFO     | agent:__train_loop:210 - Episode [42800]	AverageReward: 0.355000	AverageStep: 11.150000	
+2022-07-10 16:06:05.805 | DEBUG    | agent:__train_loop:195 - Epoch [462000/1000000]	AverageLoss: 0.001007	
+2022-07-10 16:06:14.753 | INFO     | agent:__train_loop:210 - Episode [43000]	AverageReward: 0.325000	AverageStep: 10.730000	
+2022-07-10 16:06:29.410 | DEBUG    | agent:__train_loop:195 - Epoch [464000/1000000]	AverageLoss: 0.000852	
+2022-07-10 16:06:41.450 | INFO     | agent:__train_loop:210 - Episode [43200]	AverageReward: 0.400000	AverageStep: 11.380000	
+2022-07-10 16:06:52.410 | DEBUG    | agent:__train_loop:195 - Epoch [466000/1000000]	AverageLoss: 0.001223	
+2022-07-10 16:07:07.934 | INFO     | agent:__train_loop:210 - Episode [43400]	AverageReward: 0.390000	AverageStep: 11.525000	
+2022-07-10 16:07:16.055 | DEBUG    | agent:__train_loop:195 - Epoch [468000/1000000]	AverageLoss: 0.001100	
+2022-07-10 16:07:34.813 | INFO     | agent:__train_loop:210 - Episode [43600]	AverageReward: 0.415000	AverageStep: 11.805000	
+2022-07-10 16:07:38.175 | DEBUG    | agent:__train_loop:195 - Epoch [470000/1000000]	AverageLoss: 0.001007	
+2022-07-10 16:08:01.047 | INFO     | agent:__train_loop:210 - Episode [43800]	AverageReward: 0.380000	AverageStep: 11.425000	
+2022-07-10 16:08:01.079 | DEBUG    | agent:__train_loop:195 - Epoch [472000/1000000]	AverageLoss: 0.001254	
+2022-07-10 16:08:25.538 | DEBUG    | agent:__train_loop:195 - Epoch [474000/1000000]	AverageLoss: 0.001038	
+2022-07-10 16:08:26.456 | INFO     | agent:__train_loop:210 - Episode [44000]	AverageReward: 0.315000	AverageStep: 10.365000	
+2022-07-10 16:08:49.587 | DEBUG    | agent:__train_loop:195 - Epoch [476000/1000000]	AverageLoss: 0.000976	
+2022-07-10 16:08:52.784 | INFO     | agent:__train_loop:210 - Episode [44200]	AverageReward: 0.355000	AverageStep: 11.010000	
+2022-07-10 16:09:12.761 | DEBUG    | agent:__train_loop:195 - Epoch [478000/1000000]	AverageLoss: 0.000976	
+2022-07-10 16:09:20.147 | INFO     | agent:__train_loop:210 - Episode [44400]	AverageReward: 0.415000	AverageStep: 11.820000	
+2022-07-10 16:09:37.225 | DEBUG    | agent:__train_loop:195 - Epoch [480000/1000000]	AverageLoss: 0.000960	
+2022-07-10 16:09:45.360 | INFO     | agent:__train_loop:210 - Episode [44600]	AverageReward: 0.335000	AverageStep: 10.380000	
+2022-07-10 16:10:00.537 | DEBUG    | agent:__train_loop:195 - Epoch [482000/1000000]	AverageLoss: 0.000960	
+2022-07-10 16:10:11.272 | INFO     | agent:__train_loop:210 - Episode [44800]	AverageReward: 0.355000	AverageStep: 10.880000	
+2022-07-10 16:10:24.172 | DEBUG    | agent:__train_loop:195 - Epoch [484000/1000000]	AverageLoss: 0.001038	
+2022-07-10 16:10:37.920 | INFO     | agent:__train_loop:210 - Episode [45000]	AverageReward: 0.370000	AverageStep: 11.315000	
+2022-07-10 16:10:48.039 | DEBUG    | agent:__train_loop:195 - Epoch [486000/1000000]	AverageLoss: 0.000883	
+2022-07-10 16:11:03.679 | INFO     | agent:__train_loop:210 - Episode [45200]	AverageReward: 0.340000	AverageStep: 10.580000	
+2022-07-10 16:11:12.167 | DEBUG    | agent:__train_loop:195 - Epoch [488000/1000000]	AverageLoss: 0.000898	
+2022-07-10 16:11:29.867 | INFO     | agent:__train_loop:210 - Episode [45400]	AverageReward: 0.345000	AverageStep: 10.910000	
+2022-07-10 16:11:36.276 | DEBUG    | agent:__train_loop:195 - Epoch [490000/1000000]	AverageLoss: 0.001084	
+2022-07-10 16:11:55.021 | INFO     | agent:__train_loop:210 - Episode [45600]	AverageReward: 0.320000	AverageStep: 10.320000	
+2022-07-10 16:12:00.899 | DEBUG    | agent:__train_loop:195 - Epoch [492000/1000000]	AverageLoss: 0.000775	
+2022-07-10 16:12:20.821 | INFO     | agent:__train_loop:210 - Episode [45800]	AverageReward: 0.325000	AverageStep: 10.645000	
+2022-07-10 16:12:25.145 | DEBUG    | agent:__train_loop:195 - Epoch [494000/1000000]	AverageLoss: 0.001115	
+2022-07-10 16:12:44.533 | INFO     | agent:__train_loop:210 - Episode [46000]	AverageReward: 0.255000	AverageStep: 9.445000	
+2022-07-10 16:12:50.285 | DEBUG    | agent:__train_loop:195 - Epoch [496000/1000000]	AverageLoss: 0.000883	
+2022-07-10 16:13:14.692 | INFO     | agent:__train_loop:210 - Episode [46200]	AverageReward: 0.395000	AverageStep: 11.540000	
+2022-07-10 16:13:16.822 | DEBUG    | agent:__train_loop:195 - Epoch [498000/1000000]	AverageLoss: 0.000744	
+2022-07-10 16:13:45.173 | INFO     | agent:__train_loop:210 - Episode [46400]	AverageReward: 0.335000	AverageStep: 10.770000	
+2022-07-10 16:13:45.242 | DEBUG    | agent:__train_loop:195 - Epoch [500000/1000000]	AverageLoss: 0.001084	
+2022-07-10 16:14:13.231 | DEBUG    | agent:__train_loop:195 - Epoch [502000/1000000]	AverageLoss: 0.000775	
+2022-07-10 16:14:15.136 | INFO     | agent:__train_loop:210 - Episode [46600]	AverageReward: 0.345000	AverageStep: 10.780000	
+2022-07-10 16:14:40.816 | DEBUG    | agent:__train_loop:195 - Epoch [504000/1000000]	AverageLoss: 0.000960	
+2022-07-10 16:14:45.619 | INFO     | agent:__train_loop:210 - Episode [46800]	AverageReward: 0.345000	AverageStep: 10.905000	
+2022-07-10 16:15:08.220 | DEBUG    | agent:__train_loop:195 - Epoch [506000/1000000]	AverageLoss: 0.001115	
+2022-07-10 16:15:19.348 | INFO     | agent:__train_loop:210 - Episode [47000]	AverageReward: 0.455000	AverageStep: 12.605000	
+2022-07-10 16:15:35.665 | DEBUG    | agent:__train_loop:195 - Epoch [508000/1000000]	AverageLoss: 0.001131	
+2022-07-10 16:15:48.566 | INFO     | agent:__train_loop:210 - Episode [47200]	AverageReward: 0.315000	AverageStep: 10.490000	
+2022-07-10 16:16:05.362 | DEBUG    | agent:__train_loop:195 - Epoch [510000/1000000]	AverageLoss: 0.000929	
+2022-07-10 16:16:23.049 | INFO     | agent:__train_loop:210 - Episode [47400]	AverageReward: 0.320000	AverageStep: 10.655000	
+2022-07-10 16:16:36.095 | DEBUG    | agent:__train_loop:195 - Epoch [512000/1000000]	AverageLoss: 0.001069	
+2022-07-10 16:16:54.661 | INFO     | agent:__train_loop:210 - Episode [47600]	AverageReward: 0.370000	AverageStep: 11.170000	
+2022-07-10 16:17:04.340 | DEBUG    | agent:__train_loop:195 - Epoch [514000/1000000]	AverageLoss: 0.000960	
+2022-07-10 16:17:24.263 | INFO     | agent:__train_loop:210 - Episode [47800]	AverageReward: 0.340000	AverageStep: 10.535000	
+2022-07-10 16:17:32.395 | DEBUG    | agent:__train_loop:195 - Epoch [516000/1000000]	AverageLoss: 0.001069	
+2022-07-10 16:17:53.538 | INFO     | agent:__train_loop:210 - Episode [48000]	AverageReward: 0.305000	AverageStep: 10.150000	
+2022-07-10 16:18:01.139 | DEBUG    | agent:__train_loop:195 - Epoch [518000/1000000]	AverageLoss: 0.000991	
+2022-07-10 16:18:24.604 | INFO     | agent:__train_loop:210 - Episode [48200]	AverageReward: 0.370000	AverageStep: 11.190000	
+2022-07-10 16:18:28.681 | DEBUG    | agent:__train_loop:195 - Epoch [520000/1000000]	AverageLoss: 0.000960	
+2022-07-10 16:18:53.540 | INFO     | agent:__train_loop:210 - Episode [48400]	AverageReward: 0.295000	AverageStep: 9.935000	
+2022-07-10 16:18:58.093 | DEBUG    | agent:__train_loop:195 - Epoch [522000/1000000]	AverageLoss: 0.000867	
+2022-07-10 16:19:23.235 | INFO     | agent:__train_loop:210 - Episode [48600]	AverageReward: 0.290000	AverageStep: 10.190000	
+2022-07-10 16:19:27.337 | DEBUG    | agent:__train_loop:195 - Epoch [524000/1000000]	AverageLoss: 0.000976	
+2022-07-10 16:19:51.861 | INFO     | agent:__train_loop:210 - Episode [48800]	AverageReward: 0.305000	AverageStep: 10.295000	
+2022-07-10 16:19:55.030 | DEBUG    | agent:__train_loop:195 - Epoch [526000/1000000]	AverageLoss: 0.000992	
+2022-07-10 16:20:22.443 | DEBUG    | agent:__train_loop:195 - Epoch [528000/1000000]	AverageLoss: 0.000900	
+2022-07-10 16:20:23.555 | INFO     | agent:__train_loop:210 - Episode [49000]	AverageReward: 0.380000	AverageStep: 11.470000	
+2022-07-10 16:20:50.177 | DEBUG    | agent:__train_loop:195 - Epoch [530000/1000000]	AverageLoss: 0.000976	
+2022-07-10 16:20:54.258 | INFO     | agent:__train_loop:210 - Episode [49200]	AverageReward: 0.370000	AverageStep: 11.050000	
+2022-07-10 16:21:19.517 | DEBUG    | agent:__train_loop:195 - Epoch [532000/1000000]	AverageLoss: 0.000805	
+2022-07-10 16:21:22.889 | INFO     | agent:__train_loop:210 - Episode [49400]	AverageReward: 0.290000	AverageStep: 9.885000	
+2022-07-10 16:21:47.139 | DEBUG    | agent:__train_loop:195 - Epoch [534000/1000000]	AverageLoss: 0.001007	
+2022-07-10 16:21:56.588 | INFO     | agent:__train_loop:210 - Episode [49600]	AverageReward: 0.440000	AverageStep: 12.090000	
+2022-07-10 16:22:15.239 | DEBUG    | agent:__train_loop:195 - Epoch [536000/1000000]	AverageLoss: 0.001162	
+2022-07-10 16:22:27.801 | INFO     | agent:__train_loop:210 - Episode [49800]	AverageReward: 0.370000	AverageStep: 11.005000	
+2022-07-10 16:22:44.232 | DEBUG    | agent:__train_loop:195 - Epoch [538000/1000000]	AverageLoss: 0.001254	
+2022-07-10 16:23:00.368 | INFO     | agent:__train_loop:210 - Episode [50000]	AverageReward: 0.360000	AverageStep: 11.180000	
+2022-07-10 16:23:13.611 | DEBUG    | agent:__train_loop:195 - Epoch [540000/1000000]	AverageLoss: 0.001162	
+2022-07-10 16:23:32.522 | INFO     | agent:__train_loop:210 - Episode [50200]	AverageReward: 0.375000	AverageStep: 11.405000	
+2022-07-10 16:23:41.039 | DEBUG    | agent:__train_loop:195 - Epoch [542000/1000000]	AverageLoss: 0.000976	
+2022-07-10 16:24:02.522 | INFO     | agent:__train_loop:210 - Episode [50400]	AverageReward: 0.310000	AverageStep: 10.385000	
+2022-07-10 16:24:10.225 | DEBUG    | agent:__train_loop:195 - Epoch [544000/1000000]	AverageLoss: 0.001069	
+2022-07-10 16:24:33.065 | INFO     | agent:__train_loop:210 - Episode [50600]	AverageReward: 0.330000	AverageStep: 10.410000	
+2022-07-10 16:24:39.599 | DEBUG    | agent:__train_loop:195 - Epoch [546000/1000000]	AverageLoss: 0.001022	
+2022-07-10 16:25:04.551 | INFO     | agent:__train_loop:210 - Episode [50800]	AverageReward: 0.345000	AverageStep: 10.735000	
+2022-07-10 16:25:08.598 | DEBUG    | agent:__train_loop:195 - Epoch [548000/1000000]	AverageLoss: 0.001363	
+2022-07-10 16:25:35.240 | INFO     | agent:__train_loop:210 - Episode [51000]	AverageReward: 0.355000	AverageStep: 10.610000	
+2022-07-10 16:25:37.944 | DEBUG    | agent:__train_loop:195 - Epoch [550000/1000000]	AverageLoss: 0.000976	
+2022-07-10 16:26:06.882 | INFO     | agent:__train_loop:210 - Episode [51200]	AverageReward: 0.330000	AverageStep: 10.465000	
+2022-07-10 16:26:08.027 | DEBUG    | agent:__train_loop:195 - Epoch [552000/1000000]	AverageLoss: 0.001038	
+2022-07-10 16:26:36.120 | DEBUG    | agent:__train_loop:195 - Epoch [554000/1000000]	AverageLoss: 0.000914	
+2022-07-10 16:26:38.769 | INFO     | agent:__train_loop:210 - Episode [51400]	AverageReward: 0.385000	AverageStep: 11.465000	
+2022-07-10 16:27:00.793 | DEBUG    | agent:__train_loop:195 - Epoch [556000/1000000]	AverageLoss: 0.000821	
+2022-07-10 16:27:04.948 | INFO     | agent:__train_loop:210 - Episode [51600]	AverageReward: 0.330000	AverageStep: 10.710000	
+2022-07-10 16:27:26.026 | DEBUG    | agent:__train_loop:195 - Epoch [558000/1000000]	AverageLoss: 0.000837	
+2022-07-10 16:27:32.051 | INFO     | agent:__train_loop:210 - Episode [51800]	AverageReward: 0.340000	AverageStep: 10.460000	
+2022-07-10 16:27:52.284 | DEBUG    | agent:__train_loop:195 - Epoch [560000/1000000]	AverageLoss: 0.001131	
+2022-07-10 16:27:59.823 | INFO     | agent:__train_loop:210 - Episode [52000]	AverageReward: 0.340000	AverageStep: 10.655000	
+2022-07-10 16:28:18.108 | DEBUG    | agent:__train_loop:195 - Epoch [562000/1000000]	AverageLoss: 0.001007	
+2022-07-10 16:28:27.306 | INFO     | agent:__train_loop:210 - Episode [52200]	AverageReward: 0.315000	AverageStep: 10.535000	
+2022-07-10 16:28:45.030 | DEBUG    | agent:__train_loop:195 - Epoch [564000/1000000]	AverageLoss: 0.000651	
+2022-07-10 16:28:53.329 | INFO     | agent:__train_loop:210 - Episode [52400]	AverageReward: 0.280000	AverageStep: 9.765000	
+2022-07-10 16:29:11.363 | DEBUG    | agent:__train_loop:195 - Epoch [566000/1000000]	AverageLoss: 0.001115	
+2022-07-10 16:29:19.778 | INFO     | agent:__train_loop:210 - Episode [52600]	AverageReward: 0.290000	AverageStep: 10.090000	
+2022-07-10 16:29:36.341 | DEBUG    | agent:__train_loop:195 - Epoch [568000/1000000]	AverageLoss: 0.000991	
+2022-07-10 16:29:49.211 | INFO     | agent:__train_loop:210 - Episode [52800]	AverageReward: 0.380000	AverageStep: 11.580000	
+2022-07-10 16:30:02.773 | DEBUG    | agent:__train_loop:195 - Epoch [570000/1000000]	AverageLoss: 0.000929	
+2022-07-10 16:30:17.019 | INFO     | agent:__train_loop:210 - Episode [53000]	AverageReward: 0.370000	AverageStep: 10.675000	
+2022-07-10 16:30:29.347 | DEBUG    | agent:__train_loop:195 - Epoch [572000/1000000]	AverageLoss: 0.000620	
+2022-07-10 16:30:43.773 | INFO     | agent:__train_loop:210 - Episode [53200]	AverageReward: 0.315000	AverageStep: 10.130000	
+2022-07-10 16:30:54.160 | DEBUG    | agent:__train_loop:195 - Epoch [574000/1000000]	AverageLoss: 0.000991	
+2022-07-10 16:31:11.900 | INFO     | agent:__train_loop:210 - Episode [53400]	AverageReward: 0.350000	AverageStep: 10.910000	
+2022-07-10 16:31:21.822 | DEBUG    | agent:__train_loop:195 - Epoch [576000/1000000]	AverageLoss: 0.001022	
+2022-07-10 16:31:41.073 | INFO     | agent:__train_loop:210 - Episode [53600]	AverageReward: 0.330000	AverageStep: 10.450000	
+2022-07-10 16:31:49.533 | DEBUG    | agent:__train_loop:195 - Epoch [578000/1000000]	AverageLoss: 0.000883	
+2022-07-10 16:32:07.390 | INFO     | agent:__train_loop:210 - Episode [53800]	AverageReward: 0.260000	AverageStep: 9.350000	
+2022-07-10 16:32:17.048 | DEBUG    | agent:__train_loop:195 - Epoch [580000/1000000]	AverageLoss: 0.000960	
+2022-07-10 16:32:37.616 | INFO     | agent:__train_loop:210 - Episode [54000]	AverageReward: 0.380000	AverageStep: 11.370000	
+2022-07-10 16:32:43.574 | DEBUG    | agent:__train_loop:195 - Epoch [582000/1000000]	AverageLoss: 0.001007	
+2022-07-10 16:33:07.897 | INFO     | agent:__train_loop:210 - Episode [54200]	AverageReward: 0.345000	AverageStep: 11.145000	
+2022-07-10 16:33:10.894 | DEBUG    | agent:__train_loop:195 - Epoch [584000/1000000]	AverageLoss: 0.001007	
+2022-07-10 16:33:36.415 | INFO     | agent:__train_loop:210 - Episode [54400]	AverageReward: 0.355000	AverageStep: 11.040000	
+2022-07-10 16:33:36.658 | DEBUG    | agent:__train_loop:195 - Epoch [586000/1000000]	AverageLoss: 0.000836	
+2022-07-10 16:34:02.778 | DEBUG    | agent:__train_loop:195 - Epoch [588000/1000000]	AverageLoss: 0.001053	
+2022-07-10 16:34:02.844 | INFO     | agent:__train_loop:210 - Episode [54600]	AverageReward: 0.320000	AverageStep: 10.110000	
+2022-07-10 16:34:28.444 | DEBUG    | agent:__train_loop:195 - Epoch [590000/1000000]	AverageLoss: 0.001208	
+2022-07-10 16:34:30.932 | INFO     | agent:__train_loop:210 - Episode [54800]	AverageReward: 0.365000	AverageStep: 10.995000	
+2022-07-10 16:34:53.850 | DEBUG    | agent:__train_loop:195 - Epoch [592000/1000000]	AverageLoss: 0.001053	
+2022-07-10 16:34:59.219 | INFO     | agent:__train_loop:210 - Episode [55000]	AverageReward: 0.360000	AverageStep: 11.065000	
+2022-07-10 16:35:18.038 | DEBUG    | agent:__train_loop:195 - Epoch [594000/1000000]	AverageLoss: 0.000790	
+2022-07-10 16:35:27.790 | INFO     | agent:__train_loop:210 - Episode [55200]	AverageReward: 0.425000	AverageStep: 11.970000	
+2022-07-10 16:35:42.038 | DEBUG    | agent:__train_loop:195 - Epoch [596000/1000000]	AverageLoss: 0.001007	
+2022-07-10 16:35:54.578 | INFO     | agent:__train_loop:210 - Episode [55400]	AverageReward: 0.370000	AverageStep: 11.175000	
+2022-07-10 16:36:06.549 | DEBUG    | agent:__train_loop:195 - Epoch [598000/1000000]	AverageLoss: 0.001007	
+2022-07-10 16:36:20.247 | INFO     | agent:__train_loop:210 - Episode [55600]	AverageReward: 0.330000	AverageStep: 10.425000	
+2022-07-10 16:36:30.898 | DEBUG    | agent:__train_loop:195 - Epoch [600000/1000000]	AverageLoss: 0.001208	
+2022-07-10 16:36:48.673 | INFO     | agent:__train_loop:210 - Episode [55800]	AverageReward: 0.440000	AverageStep: 11.710000	
+2022-07-10 16:36:54.854 | DEBUG    | agent:__train_loop:195 - Epoch [602000/1000000]	AverageLoss: 0.000991	
+2022-07-10 16:37:17.046 | INFO     | agent:__train_loop:210 - Episode [56000]	AverageReward: 0.455000	AverageStep: 12.215000	
+2022-07-10 16:37:17.950 | DEBUG    | agent:__train_loop:195 - Epoch [604000/1000000]	AverageLoss: 0.001022	
+2022-07-10 16:37:41.945 | DEBUG    | agent:__train_loop:195 - Epoch [606000/1000000]	AverageLoss: 0.001131	
+2022-07-10 16:37:43.531 | INFO     | agent:__train_loop:210 - Episode [56200]	AverageReward: 0.385000	AverageStep: 11.150000	
+2022-07-10 16:38:06.099 | DEBUG    | agent:__train_loop:195 - Epoch [608000/1000000]	AverageLoss: 0.001146	
+2022-07-10 16:38:09.636 | INFO     | agent:__train_loop:210 - Episode [56400]	AverageReward: 0.345000	AverageStep: 10.745000	
+2022-07-10 16:38:30.040 | DEBUG    | agent:__train_loop:195 - Epoch [610000/1000000]	AverageLoss: 0.000986	
+2022-07-10 16:38:37.643 | INFO     | agent:__train_loop:210 - Episode [56600]	AverageReward: 0.420000	AverageStep: 11.760000	
+2022-07-10 16:38:54.313 | DEBUG    | agent:__train_loop:195 - Epoch [612000/1000000]	AverageLoss: 0.001003	
+2022-07-10 16:39:03.515 | INFO     | agent:__train_loop:210 - Episode [56800]	AverageReward: 0.320000	AverageStep: 10.675000	
+2022-07-10 16:39:18.094 | DEBUG    | agent:__train_loop:195 - Epoch [614000/1000000]	AverageLoss: 0.001240	
+2022-07-10 16:39:31.209 | INFO     | agent:__train_loop:210 - Episode [57000]	AverageReward: 0.420000	AverageStep: 11.510000	
+2022-07-10 16:39:42.910 | DEBUG    | agent:__train_loop:195 - Epoch [616000/1000000]	AverageLoss: 0.001115	
+2022-07-10 16:39:59.676 | INFO     | agent:__train_loop:210 - Episode [57200]	AverageReward: 0.390000	AverageStep: 11.410000	
+2022-07-10 16:40:07.062 | DEBUG    | agent:__train_loop:195 - Epoch [618000/1000000]	AverageLoss: 0.000929	
+2022-07-10 16:40:28.335 | INFO     | agent:__train_loop:210 - Episode [57400]	AverageReward: 0.430000	AverageStep: 12.005000	
+2022-07-10 16:40:31.914 | DEBUG    | agent:__train_loop:195 - Epoch [620000/1000000]	AverageLoss: 0.001270	
+2022-07-10 16:40:54.256 | INFO     | agent:__train_loop:210 - Episode [57600]	AverageReward: 0.265000	AverageStep: 9.595000	
+2022-07-10 16:40:58.222 | DEBUG    | agent:__train_loop:195 - Epoch [622000/1000000]	AverageLoss: 0.000898	
+2022-07-10 16:41:20.393 | INFO     | agent:__train_loop:210 - Episode [57800]	AverageReward: 0.335000	AverageStep: 10.510000	
+2022-07-10 16:41:23.045 | DEBUG    | agent:__train_loop:195 - Epoch [624000/1000000]	AverageLoss: 0.001053	
+2022-07-10 16:41:47.039 | DEBUG    | agent:__train_loop:195 - Epoch [626000/1000000]	AverageLoss: 0.001022	
+2022-07-10 16:41:47.566 | INFO     | agent:__train_loop:210 - Episode [58000]	AverageReward: 0.380000	AverageStep: 11.280000	
+2022-07-10 16:42:12.139 | DEBUG    | agent:__train_loop:195 - Epoch [628000/1000000]	AverageLoss: 0.000867	
+2022-07-10 16:42:14.789 | INFO     | agent:__train_loop:210 - Episode [58200]	AverageReward: 0.345000	AverageStep: 10.940000	
+2022-07-10 16:42:36.613 | DEBUG    | agent:__train_loop:195 - Epoch [630000/1000000]	AverageLoss: 0.000836	
+2022-07-10 16:42:41.539 | INFO     | agent:__train_loop:210 - Episode [58400]	AverageReward: 0.345000	AverageStep: 10.765000	
+2022-07-10 16:43:02.197 | DEBUG    | agent:__train_loop:195 - Epoch [632000/1000000]	AverageLoss: 0.000914	
+2022-07-10 16:43:08.363 | INFO     | agent:__train_loop:210 - Episode [58600]	AverageReward: 0.325000	AverageStep: 10.525000	
+2022-07-10 16:43:27.869 | DEBUG    | agent:__train_loop:195 - Epoch [634000/1000000]	AverageLoss: 0.000929	
+2022-07-10 16:43:34.999 | INFO     | agent:__train_loop:210 - Episode [58800]	AverageReward: 0.325000	AverageStep: 10.375000	
+2022-07-10 16:43:52.391 | DEBUG    | agent:__train_loop:195 - Epoch [636000/1000000]	AverageLoss: 0.000914	
+2022-07-10 16:44:00.734 | INFO     | agent:__train_loop:210 - Episode [59000]	AverageReward: 0.310000	AverageStep: 10.470000	
+2022-07-10 16:44:18.197 | DEBUG    | agent:__train_loop:195 - Epoch [638000/1000000]	AverageLoss: 0.001084	
+2022-07-10 16:44:28.501 | INFO     | agent:__train_loop:210 - Episode [59200]	AverageReward: 0.355000	AverageStep: 10.770000	
+2022-07-10 16:44:43.542 | DEBUG    | agent:__train_loop:195 - Epoch [640000/1000000]	AverageLoss: 0.001053	
+2022-07-10 16:44:56.118 | INFO     | agent:__train_loop:210 - Episode [59400]	AverageReward: 0.360000	AverageStep: 10.880000	
+2022-07-10 16:45:08.657 | DEBUG    | agent:__train_loop:195 - Epoch [642000/1000000]	AverageLoss: 0.000914	
+2022-07-10 16:45:22.915 | INFO     | agent:__train_loop:210 - Episode [59600]	AverageReward: 0.385000	AverageStep: 10.850000	
+2022-07-10 16:45:33.351 | DEBUG    | agent:__train_loop:195 - Epoch [644000/1000000]	AverageLoss: 0.001022	
+2022-07-10 16:45:52.723 | INFO     | agent:__train_loop:210 - Episode [59800]	AverageReward: 0.435000	AverageStep: 12.200000	
+2022-07-10 16:45:57.917 | DEBUG    | agent:__train_loop:195 - Epoch [646000/1000000]	AverageLoss: 0.000991	
+2022-07-10 16:46:19.854 | INFO     | agent:__train_loop:210 - Episode [60000]	AverageReward: 0.365000	AverageStep: 10.845000	
+2022-07-10 16:46:22.904 | DEBUG    | agent:__train_loop:195 - Epoch [648000/1000000]	AverageLoss: 0.001146	
+2022-07-10 16:46:46.712 | DEBUG    | agent:__train_loop:195 - Epoch [650000/1000000]	AverageLoss: 0.000929	
+2022-07-10 16:46:48.161 | INFO     | agent:__train_loop:210 - Episode [60200]	AverageReward: 0.415000	AverageStep: 11.765000	
+2022-07-10 16:47:11.841 | DEBUG    | agent:__train_loop:195 - Epoch [652000/1000000]	AverageLoss: 0.001038	
+2022-07-10 16:47:14.435 | INFO     | agent:__train_loop:210 - Episode [60400]	AverageReward: 0.315000	AverageStep: 10.410000	
+2022-07-10 16:47:36.467 | DEBUG    | agent:__train_loop:195 - Epoch [654000/1000000]	AverageLoss: 0.000976	
+2022-07-10 16:47:40.336 | INFO     | agent:__train_loop:210 - Episode [60600]	AverageReward: 0.350000	AverageStep: 10.600000	
+2022-07-10 16:48:01.402 | DEBUG    | agent:__train_loop:195 - Epoch [656000/1000000]	AverageLoss: 0.000836	
+2022-07-10 16:48:06.506 | INFO     | agent:__train_loop:210 - Episode [60800]	AverageReward: 0.320000	AverageStep: 10.455000	
+2022-07-10 16:48:25.671 | DEBUG    | agent:__train_loop:195 - Epoch [658000/1000000]	AverageLoss: 0.001177	
+2022-07-10 16:48:33.889 | INFO     | agent:__train_loop:210 - Episode [61000]	AverageReward: 0.370000	AverageStep: 11.290000	
+2022-07-10 16:48:49.783 | DEBUG    | agent:__train_loop:195 - Epoch [660000/1000000]	AverageLoss: 0.000898	
+2022-07-10 16:49:01.678 | INFO     | agent:__train_loop:210 - Episode [61200]	AverageReward: 0.400000	AverageStep: 11.515000	
+2022-07-10 16:49:14.543 | DEBUG    | agent:__train_loop:195 - Epoch [662000/1000000]	AverageLoss: 0.001131	
+2022-07-10 16:49:27.616 | INFO     | agent:__train_loop:210 - Episode [61400]	AverageReward: 0.290000	AverageStep: 10.390000	
+2022-07-10 16:49:39.400 | DEBUG    | agent:__train_loop:195 - Epoch [664000/1000000]	AverageLoss: 0.001084	
+2022-07-10 16:49:54.221 | INFO     | agent:__train_loop:210 - Episode [61600]	AverageReward: 0.330000	AverageStep: 10.785000	
+2022-07-10 16:50:04.250 | DEBUG    | agent:__train_loop:195 - Epoch [666000/1000000]	AverageLoss: 0.001069	
+2022-07-10 16:50:21.704 | INFO     | agent:__train_loop:210 - Episode [61800]	AverageReward: 0.325000	AverageStep: 10.355000	
+2022-07-10 16:50:30.813 | DEBUG    | agent:__train_loop:195 - Epoch [668000/1000000]	AverageLoss: 0.001069	
+2022-07-10 16:50:48.667 | INFO     | agent:__train_loop:210 - Episode [62000]	AverageReward: 0.340000	AverageStep: 10.685000	
+2022-07-10 16:50:55.724 | DEBUG    | agent:__train_loop:195 - Epoch [670000/1000000]	AverageLoss: 0.001100	
+2022-07-10 16:51:17.051 | INFO     | agent:__train_loop:210 - Episode [62200]	AverageReward: 0.395000	AverageStep: 11.605000	
+2022-07-10 16:51:20.537 | DEBUG    | agent:__train_loop:195 - Epoch [672000/1000000]	AverageLoss: 0.001177	
+2022-07-10 16:51:43.740 | INFO     | agent:__train_loop:210 - Episode [62400]	AverageReward: 0.310000	AverageStep: 10.475000	
+2022-07-10 16:51:46.012 | DEBUG    | agent:__train_loop:195 - Epoch [674000/1000000]	AverageLoss: 0.000960	
+2022-07-10 16:52:10.998 | INFO     | agent:__train_loop:210 - Episode [62600]	AverageReward: 0.350000	AverageStep: 10.820000	
+2022-07-10 16:52:11.076 | DEBUG    | agent:__train_loop:195 - Epoch [676000/1000000]	AverageLoss: 0.000852	
+2022-07-10 16:52:35.432 | DEBUG    | agent:__train_loop:195 - Epoch [678000/1000000]	AverageLoss: 0.001100	
+2022-07-10 16:52:39.835 | INFO     | agent:__train_loop:210 - Episode [62800]	AverageReward: 0.425000	AverageStep: 11.805000	
+2022-07-10 16:53:00.536 | DEBUG    | agent:__train_loop:195 - Epoch [680000/1000000]	AverageLoss: 0.001084	
+2022-07-10 16:53:05.763 | INFO     | agent:__train_loop:210 - Episode [63000]	AverageReward: 0.325000	AverageStep: 10.295000	
+2022-07-10 16:53:25.689 | DEBUG    | agent:__train_loop:195 - Epoch [682000/1000000]	AverageLoss: 0.001084	
+2022-07-10 16:53:32.804 | INFO     | agent:__train_loop:210 - Episode [63200]	AverageReward: 0.345000	AverageStep: 10.815000	
+2022-07-10 16:53:50.088 | DEBUG    | agent:__train_loop:195 - Epoch [684000/1000000]	AverageLoss: 0.000945	
+2022-07-10 16:54:00.452 | INFO     | agent:__train_loop:210 - Episode [63400]	AverageReward: 0.365000	AverageStep: 11.185000	
+2022-07-10 16:54:15.308 | DEBUG    | agent:__train_loop:195 - Epoch [686000/1000000]	AverageLoss: 0.001022	
+2022-07-10 16:54:26.418 | INFO     | agent:__train_loop:210 - Episode [63600]	AverageReward: 0.310000	AverageStep: 10.335000	
+2022-07-10 16:54:40.501 | DEBUG    | agent:__train_loop:195 - Epoch [688000/1000000]	AverageLoss: 0.000945	
+2022-07-10 16:54:50.542 | INFO     | agent:__train_loop:210 - Episode [63800]	AverageReward: 0.240000	AverageStep: 9.530000	
+2022-07-10 16:55:05.279 | DEBUG    | agent:__train_loop:195 - Epoch [690000/1000000]	AverageLoss: 0.000976	
+2022-07-10 16:55:17.141 | INFO     | agent:__train_loop:210 - Episode [64000]	AverageReward: 0.345000	AverageStep: 10.915000	
+2022-07-10 16:55:29.627 | DEBUG    | agent:__train_loop:195 - Epoch [692000/1000000]	AverageLoss: 0.000976	
+2022-07-10 16:55:43.586 | INFO     | agent:__train_loop:210 - Episode [64200]	AverageReward: 0.335000	AverageStep: 10.690000	
+2022-07-10 16:55:54.372 | DEBUG    | agent:__train_loop:195 - Epoch [694000/1000000]	AverageLoss: 0.000945	
+2022-07-10 16:56:11.320 | INFO     | agent:__train_loop:210 - Episode [64400]	AverageReward: 0.390000	AverageStep: 11.555000	
+2022-07-10 16:56:18.300 | DEBUG    | agent:__train_loop:195 - Epoch [696000/1000000]	AverageLoss: 0.001038	
+2022-07-10 16:56:38.095 | INFO     | agent:__train_loop:210 - Episode [64600]	AverageReward: 0.345000	AverageStep: 11.055000	
+2022-07-10 16:56:42.564 | DEBUG    | agent:__train_loop:195 - Epoch [698000/1000000]	AverageLoss: 0.000991	
+2022-07-10 16:57:06.043 | INFO     | agent:__train_loop:210 - Episode [64800]	AverageReward: 0.405000	AverageStep: 11.430000	
+2022-07-10 16:57:07.214 | DEBUG    | agent:__train_loop:195 - Epoch [700000/1000000]	AverageLoss: 0.001022	
+2022-07-10 16:57:30.782 | DEBUG    | agent:__train_loop:195 - Epoch [702000/1000000]	AverageLoss: 0.000991	
+2022-07-10 16:57:33.469 | INFO     | agent:__train_loop:210 - Episode [65000]	AverageReward: 0.385000	AverageStep: 11.395000	
+2022-07-10 16:57:56.410 | DEBUG    | agent:__train_loop:195 - Epoch [704000/1000000]	AverageLoss: 0.000945	
+2022-07-10 16:57:58.454 | INFO     | agent:__train_loop:210 - Episode [65200]	AverageReward: 0.285000	AverageStep: 9.895000	
+2022-07-10 16:58:21.894 | DEBUG    | agent:__train_loop:195 - Epoch [706000/1000000]	AverageLoss: 0.000991	
+2022-07-10 16:58:23.921 | INFO     | agent:__train_loop:210 - Episode [65400]	AverageReward: 0.290000	AverageStep: 9.865000	
+2022-07-10 16:58:46.346 | DEBUG    | agent:__train_loop:195 - Epoch [708000/1000000]	AverageLoss: 0.000852	
+2022-07-10 16:58:52.825 | INFO     | agent:__train_loop:210 - Episode [65600]	AverageReward: 0.450000	AverageStep: 11.910000	
+2022-07-10 16:59:10.438 | DEBUG    | agent:__train_loop:195 - Epoch [710000/1000000]	AverageLoss: 0.001038	
+2022-07-10 16:59:25.271 | INFO     | agent:__train_loop:210 - Episode [65800]	AverageReward: 0.475000	AverageStep: 12.695000	
+2022-07-10 16:59:37.337 | DEBUG    | agent:__train_loop:195 - Epoch [712000/1000000]	AverageLoss: 0.001084	
+2022-07-10 16:59:54.284 | INFO     | agent:__train_loop:210 - Episode [66000]	AverageReward: 0.400000	AverageStep: 11.530000	
+2022-07-10 17:00:02.732 | DEBUG    | agent:__train_loop:195 - Epoch [714000/1000000]	AverageLoss: 0.000790	
+2022-07-10 17:00:22.661 | INFO     | agent:__train_loop:210 - Episode [66200]	AverageReward: 0.355000	AverageStep: 10.605000	
+2022-07-10 17:00:29.307 | DEBUG    | agent:__train_loop:195 - Epoch [716000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:00:50.257 | INFO     | agent:__train_loop:210 - Episode [66400]	AverageReward: 0.325000	AverageStep: 10.400000	
+2022-07-10 17:00:56.129 | DEBUG    | agent:__train_loop:195 - Epoch [718000/1000000]	AverageLoss: 0.001270	
+2022-07-10 17:01:17.465 | INFO     | agent:__train_loop:210 - Episode [66600]	AverageReward: 0.340000	AverageStep: 10.455000	
+2022-07-10 17:01:21.910 | DEBUG    | agent:__train_loop:195 - Epoch [720000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:01:43.428 | INFO     | agent:__train_loop:210 - Episode [66800]	AverageReward: 0.305000	AverageStep: 10.080000	
+2022-07-10 17:01:47.538 | DEBUG    | agent:__train_loop:195 - Epoch [722000/1000000]	AverageLoss: 0.001161	
+2022-07-10 17:02:11.215 | INFO     | agent:__train_loop:210 - Episode [67000]	AverageReward: 0.410000	AverageStep: 11.460000	
+2022-07-10 17:02:11.544 | DEBUG    | agent:__train_loop:195 - Epoch [724000/1000000]	AverageLoss: 0.001007	
+2022-07-10 17:02:37.046 | INFO     | agent:__train_loop:210 - Episode [67200]	AverageReward: 0.305000	AverageStep: 10.020000	
+2022-07-10 17:02:37.382 | DEBUG    | agent:__train_loop:195 - Epoch [726000/1000000]	AverageLoss: 0.000790	
+2022-07-10 17:03:02.534 | DEBUG    | agent:__train_loop:195 - Epoch [728000/1000000]	AverageLoss: 0.000790	
+2022-07-10 17:03:03.143 | INFO     | agent:__train_loop:210 - Episode [67400]	AverageReward: 0.330000	AverageStep: 10.415000	
+2022-07-10 17:03:26.952 | DEBUG    | agent:__train_loop:195 - Epoch [730000/1000000]	AverageLoss: 0.000945	
+2022-07-10 17:03:31.498 | INFO     | agent:__train_loop:210 - Episode [67600]	AverageReward: 0.435000	AverageStep: 11.610000	
+2022-07-10 17:03:52.238 | DEBUG    | agent:__train_loop:195 - Epoch [732000/1000000]	AverageLoss: 0.001223	
+2022-07-10 17:03:57.678 | INFO     | agent:__train_loop:210 - Episode [67800]	AverageReward: 0.300000	AverageStep: 10.125000	
+2022-07-10 17:04:19.538 | DEBUG    | agent:__train_loop:195 - Epoch [734000/1000000]	AverageLoss: 0.001022	
+2022-07-10 17:04:28.616 | INFO     | agent:__train_loop:210 - Episode [68000]	AverageReward: 0.435000	AverageStep: 11.770000	
+2022-07-10 17:04:43.943 | DEBUG    | agent:__train_loop:195 - Epoch [736000/1000000]	AverageLoss: 0.000836	
+2022-07-10 17:04:56.593 | INFO     | agent:__train_loop:210 - Episode [68200]	AverageReward: 0.380000	AverageStep: 11.230000	
+2022-07-10 17:05:07.802 | DEBUG    | agent:__train_loop:195 - Epoch [738000/1000000]	AverageLoss: 0.001131	
+2022-07-10 17:05:25.236 | INFO     | agent:__train_loop:210 - Episode [68400]	AverageReward: 0.435000	AverageStep: 12.065000	
+2022-07-10 17:05:31.736 | DEBUG    | agent:__train_loop:195 - Epoch [740000/1000000]	AverageLoss: 0.000852	
+2022-07-10 17:05:55.424 | INFO     | agent:__train_loop:210 - Episode [68600]	AverageReward: 0.475000	AverageStep: 12.475000	
+2022-07-10 17:05:56.391 | DEBUG    | agent:__train_loop:195 - Epoch [742000/1000000]	AverageLoss: 0.001007	
+2022-07-10 17:06:21.843 | DEBUG    | agent:__train_loop:195 - Epoch [744000/1000000]	AverageLoss: 0.001239	
+2022-07-10 17:06:23.432 | INFO     | agent:__train_loop:210 - Episode [68800]	AverageReward: 0.400000	AverageStep: 11.120000	
+2022-07-10 17:06:46.212 | DEBUG    | agent:__train_loop:195 - Epoch [746000/1000000]	AverageLoss: 0.001254	
+2022-07-10 17:06:51.539 | INFO     | agent:__train_loop:210 - Episode [69000]	AverageReward: 0.395000	AverageStep: 11.175000	
+2022-07-10 17:07:12.087 | DEBUG    | agent:__train_loop:195 - Epoch [748000/1000000]	AverageLoss: 0.000960	
+2022-07-10 17:07:17.279 | INFO     | agent:__train_loop:210 - Episode [69200]	AverageReward: 0.300000	AverageStep: 10.080000	
+2022-07-10 17:07:37.249 | DEBUG    | agent:__train_loop:195 - Epoch [750000/1000000]	AverageLoss: 0.001131	
+2022-07-10 17:07:43.829 | INFO     | agent:__train_loop:210 - Episode [69400]	AverageReward: 0.345000	AverageStep: 10.525000	
+2022-07-10 17:08:03.926 | DEBUG    | agent:__train_loop:195 - Epoch [752000/1000000]	AverageLoss: 0.001022	
+2022-07-10 17:08:11.333 | INFO     | agent:__train_loop:210 - Episode [69600]	AverageReward: 0.320000	AverageStep: 10.475000	
+2022-07-10 17:08:28.227 | DEBUG    | agent:__train_loop:195 - Epoch [754000/1000000]	AverageLoss: 0.001099	
+2022-07-10 17:08:38.774 | INFO     | agent:__train_loop:210 - Episode [69800]	AverageReward: 0.410000	AverageStep: 11.200000	
+2022-07-10 17:08:52.751 | DEBUG    | agent:__train_loop:195 - Epoch [756000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:09:05.759 | INFO     | agent:__train_loop:210 - Episode [70000]	AverageReward: 0.375000	AverageStep: 11.065000	
+2022-07-10 17:09:17.331 | DEBUG    | agent:__train_loop:195 - Epoch [758000/1000000]	AverageLoss: 0.000976	
+2022-07-10 17:09:32.558 | INFO     | agent:__train_loop:210 - Episode [70200]	AverageReward: 0.380000	AverageStep: 10.915000	
+2022-07-10 17:09:41.779 | DEBUG    | agent:__train_loop:195 - Epoch [760000/1000000]	AverageLoss: 0.001100	
+2022-07-10 17:09:57.957 | INFO     | agent:__train_loop:210 - Episode [70400]	AverageReward: 0.285000	AverageStep: 10.020000	
+2022-07-10 17:10:07.264 | DEBUG    | agent:__train_loop:195 - Epoch [762000/1000000]	AverageLoss: 0.001146	
+2022-07-10 17:10:25.550 | INFO     | agent:__train_loop:210 - Episode [70600]	AverageReward: 0.385000	AverageStep: 11.175000	
+2022-07-10 17:10:32.351 | DEBUG    | agent:__train_loop:195 - Epoch [764000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:10:52.172 | INFO     | agent:__train_loop:210 - Episode [70800]	AverageReward: 0.330000	AverageStep: 10.520000	
+2022-07-10 17:10:57.353 | DEBUG    | agent:__train_loop:195 - Epoch [766000/1000000]	AverageLoss: 0.000728	
+2022-07-10 17:11:19.095 | INFO     | agent:__train_loop:210 - Episode [71000]	AverageReward: 0.330000	AverageStep: 10.745000	
+2022-07-10 17:11:22.749 | DEBUG    | agent:__train_loop:195 - Epoch [768000/1000000]	AverageLoss: 0.001099	
+2022-07-10 17:11:46.316 | INFO     | agent:__train_loop:210 - Episode [71200]	AverageReward: 0.360000	AverageStep: 11.050000	
+2022-07-10 17:11:47.193 | DEBUG    | agent:__train_loop:195 - Epoch [770000/1000000]	AverageLoss: 0.001115	
+2022-07-10 17:12:12.637 | DEBUG    | agent:__train_loop:195 - Epoch [772000/1000000]	AverageLoss: 0.000914	
+2022-07-10 17:12:12.716 | INFO     | agent:__train_loop:210 - Episode [71400]	AverageReward: 0.335000	AverageStep: 10.365000	
+2022-07-10 17:12:36.832 | INFO     | agent:__train_loop:210 - Episode [71600]	AverageReward: 0.255000	AverageStep: 9.240000	
+2022-07-10 17:12:38.717 | DEBUG    | agent:__train_loop:195 - Epoch [774000/1000000]	AverageLoss: 0.000852	
+2022-07-10 17:13:03.292 | DEBUG    | agent:__train_loop:195 - Epoch [776000/1000000]	AverageLoss: 0.000991	
+2022-07-10 17:13:04.504 | INFO     | agent:__train_loop:210 - Episode [71800]	AverageReward: 0.385000	AverageStep: 11.150000	
+2022-07-10 17:13:28.775 | DEBUG    | agent:__train_loop:195 - Epoch [778000/1000000]	AverageLoss: 0.000929	
+2022-07-10 17:13:29.581 | INFO     | agent:__train_loop:210 - Episode [72000]	AverageReward: 0.290000	AverageStep: 9.885000	
+2022-07-10 17:13:53.473 | DEBUG    | agent:__train_loop:195 - Epoch [780000/1000000]	AverageLoss: 0.000960	
+2022-07-10 17:13:57.233 | INFO     | agent:__train_loop:210 - Episode [72200]	AverageReward: 0.400000	AverageStep: 11.235000	
+2022-07-10 17:14:19.044 | DEBUG    | agent:__train_loop:195 - Epoch [782000/1000000]	AverageLoss: 0.001130	
+2022-07-10 17:14:23.205 | INFO     | agent:__train_loop:210 - Episode [72400]	AverageReward: 0.310000	AverageStep: 10.130000	
+2022-07-10 17:14:43.708 | DEBUG    | agent:__train_loop:195 - Epoch [784000/1000000]	AverageLoss: 0.000991	
+2022-07-10 17:14:48.851 | INFO     | agent:__train_loop:210 - Episode [72600]	AverageReward: 0.315000	AverageStep: 10.220000	
+2022-07-10 17:15:08.422 | DEBUG    | agent:__train_loop:195 - Epoch [786000/1000000]	AverageLoss: 0.001053	
+2022-07-10 17:15:16.867 | INFO     | agent:__train_loop:210 - Episode [72800]	AverageReward: 0.410000	AverageStep: 11.645000	
+2022-07-10 17:15:33.323 | DEBUG    | agent:__train_loop:195 - Epoch [788000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:15:43.566 | INFO     | agent:__train_loop:210 - Episode [73000]	AverageReward: 0.345000	AverageStep: 10.565000	
+2022-07-10 17:15:58.043 | DEBUG    | agent:__train_loop:195 - Epoch [790000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:16:10.940 | INFO     | agent:__train_loop:210 - Episode [73200]	AverageReward: 0.385000	AverageStep: 11.055000	
+2022-07-10 17:16:23.624 | DEBUG    | agent:__train_loop:195 - Epoch [792000/1000000]	AverageLoss: 0.000929	
+2022-07-10 17:16:37.424 | INFO     | agent:__train_loop:210 - Episode [73400]	AverageReward: 0.335000	AverageStep: 10.335000	
+2022-07-10 17:16:48.659 | DEBUG    | agent:__train_loop:195 - Epoch [794000/1000000]	AverageLoss: 0.000991	
+2022-07-10 17:17:04.936 | INFO     | agent:__train_loop:210 - Episode [73600]	AverageReward: 0.380000	AverageStep: 11.140000	
+2022-07-10 17:17:13.075 | DEBUG    | agent:__train_loop:195 - Epoch [796000/1000000]	AverageLoss: 0.001130	
+2022-07-10 17:17:30.529 | INFO     | agent:__train_loop:210 - Episode [73800]	AverageReward: 0.320000	AverageStep: 10.015000	
+2022-07-10 17:17:38.865 | DEBUG    | agent:__train_loop:195 - Epoch [798000/1000000]	AverageLoss: 0.000867	
+2022-07-10 17:17:58.128 | INFO     | agent:__train_loop:210 - Episode [74000]	AverageReward: 0.380000	AverageStep: 10.950000	
+2022-07-10 17:18:04.108 | DEBUG    | agent:__train_loop:195 - Epoch [800000/1000000]	AverageLoss: 0.000883	
+2022-07-10 17:18:26.772 | INFO     | agent:__train_loop:210 - Episode [74200]	AverageReward: 0.430000	AverageStep: 11.785000	
+2022-07-10 17:18:28.214 | DEBUG    | agent:__train_loop:195 - Epoch [802000/1000000]	AverageLoss: 0.001022	
+2022-07-10 17:18:52.821 | DEBUG    | agent:__train_loop:195 - Epoch [804000/1000000]	AverageLoss: 0.001053	
+2022-07-10 17:18:55.800 | INFO     | agent:__train_loop:210 - Episode [74400]	AverageReward: 0.445000	AverageStep: 11.855000	
+2022-07-10 17:19:16.325 | DEBUG    | agent:__train_loop:195 - Epoch [806000/1000000]	AverageLoss: 0.001146	
+2022-07-10 17:19:25.330 | INFO     | agent:__train_loop:210 - Episode [74600]	AverageReward: 0.480000	AverageStep: 12.340000	
+2022-07-10 17:19:41.325 | DEBUG    | agent:__train_loop:195 - Epoch [808000/1000000]	AverageLoss: 0.001316	
+2022-07-10 17:19:52.792 | INFO     | agent:__train_loop:210 - Episode [74800]	AverageReward: 0.375000	AverageStep: 10.925000	
+2022-07-10 17:20:05.972 | DEBUG    | agent:__train_loop:195 - Epoch [810000/1000000]	AverageLoss: 0.001007	
+2022-07-10 17:20:21.110 | INFO     | agent:__train_loop:210 - Episode [75000]	AverageReward: 0.435000	AverageStep: 11.610000	
+2022-07-10 17:20:30.888 | DEBUG    | agent:__train_loop:195 - Epoch [812000/1000000]	AverageLoss: 0.001254	
+2022-07-10 17:20:48.082 | INFO     | agent:__train_loop:210 - Episode [75200]	AverageReward: 0.365000	AverageStep: 10.695000	
+2022-07-10 17:20:56.264 | DEBUG    | agent:__train_loop:195 - Epoch [814000/1000000]	AverageLoss: 0.001130	
+2022-07-10 17:21:16.351 | INFO     | agent:__train_loop:210 - Episode [75400]	AverageReward: 0.405000	AverageStep: 11.300000	
+2022-07-10 17:21:21.038 | DEBUG    | agent:__train_loop:195 - Epoch [816000/1000000]	AverageLoss: 0.001332	
+2022-07-10 17:21:44.775 | INFO     | agent:__train_loop:210 - Episode [75600]	AverageReward: 0.455000	AverageStep: 11.805000	
+2022-07-10 17:21:45.032 | DEBUG    | agent:__train_loop:195 - Epoch [818000/1000000]	AverageLoss: 0.001007	
+2022-07-10 17:22:09.862 | DEBUG    | agent:__train_loop:195 - Epoch [820000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:22:12.744 | INFO     | agent:__train_loop:210 - Episode [75800]	AverageReward: 0.390000	AverageStep: 11.190000	
+2022-07-10 17:22:34.904 | DEBUG    | agent:__train_loop:195 - Epoch [822000/1000000]	AverageLoss: 0.001146	
+2022-07-10 17:22:39.551 | INFO     | agent:__train_loop:210 - Episode [76000]	AverageReward: 0.375000	AverageStep: 10.635000	
+2022-07-10 17:23:00.379 | DEBUG    | agent:__train_loop:195 - Epoch [824000/1000000]	AverageLoss: 0.001270	
+2022-07-10 17:23:06.718 | INFO     | agent:__train_loop:210 - Episode [76200]	AverageReward: 0.380000	AverageStep: 10.800000	
+2022-07-10 17:23:25.924 | DEBUG    | agent:__train_loop:195 - Epoch [826000/1000000]	AverageLoss: 0.000929	
+2022-07-10 17:23:32.568 | INFO     | agent:__train_loop:210 - Episode [76400]	AverageReward: 0.325000	AverageStep: 10.190000	
+2022-07-10 17:23:51.781 | DEBUG    | agent:__train_loop:195 - Epoch [828000/1000000]	AverageLoss: 0.001022	
+2022-07-10 17:23:59.871 | INFO     | agent:__train_loop:210 - Episode [76600]	AverageReward: 0.365000	AverageStep: 10.645000	
+2022-07-10 17:24:16.569 | DEBUG    | agent:__train_loop:195 - Epoch [830000/1000000]	AverageLoss: 0.001115	
+2022-07-10 17:24:26.638 | INFO     | agent:__train_loop:210 - Episode [76800]	AverageReward: 0.365000	AverageStep: 10.635000	
+2022-07-10 17:24:41.815 | DEBUG    | agent:__train_loop:195 - Epoch [832000/1000000]	AverageLoss: 0.000898	
+2022-07-10 17:24:52.765 | INFO     | agent:__train_loop:210 - Episode [77000]	AverageReward: 0.350000	AverageStep: 10.290000	
+2022-07-10 17:25:06.780 | DEBUG    | agent:__train_loop:195 - Epoch [834000/1000000]	AverageLoss: 0.000991	
+2022-07-10 17:25:20.579 | INFO     | agent:__train_loop:210 - Episode [77200]	AverageReward: 0.385000	AverageStep: 10.995000	
+2022-07-10 17:25:32.438 | DEBUG    | agent:__train_loop:195 - Epoch [836000/1000000]	AverageLoss: 0.000836	
+2022-07-10 17:25:46.595 | INFO     | agent:__train_loop:210 - Episode [77400]	AverageReward: 0.335000	AverageStep: 10.135000	
+2022-07-10 17:25:58.321 | DEBUG    | agent:__train_loop:195 - Epoch [838000/1000000]	AverageLoss: 0.000960	
+2022-07-10 17:26:11.601 | INFO     | agent:__train_loop:210 - Episode [77600]	AverageReward: 0.265000	AverageStep: 9.620000	
+2022-07-10 17:26:24.300 | DEBUG    | agent:__train_loop:195 - Epoch [840000/1000000]	AverageLoss: 0.001254	
+2022-07-10 17:26:39.043 | INFO     | agent:__train_loop:210 - Episode [77800]	AverageReward: 0.345000	AverageStep: 10.565000	
+2022-07-10 17:26:50.146 | DEBUG    | agent:__train_loop:195 - Epoch [842000/1000000]	AverageLoss: 0.000929	
+2022-07-10 17:27:07.968 | INFO     | agent:__train_loop:210 - Episode [78000]	AverageReward: 0.410000	AverageStep: 11.655000	
+2022-07-10 17:27:15.117 | DEBUG    | agent:__train_loop:195 - Epoch [844000/1000000]	AverageLoss: 0.000945	
+2022-07-10 17:27:35.110 | INFO     | agent:__train_loop:210 - Episode [78200]	AverageReward: 0.365000	AverageStep: 10.845000	
+2022-07-10 17:27:39.553 | DEBUG    | agent:__train_loop:195 - Epoch [846000/1000000]	AverageLoss: 0.000821	
+2022-07-10 17:28:02.155 | INFO     | agent:__train_loop:210 - Episode [78400]	AverageReward: 0.350000	AverageStep: 10.880000	
+2022-07-10 17:28:04.735 | DEBUG    | agent:__train_loop:195 - Epoch [848000/1000000]	AverageLoss: 0.001053	
+2022-07-10 17:28:29.206 | DEBUG    | agent:__train_loop:195 - Epoch [850000/1000000]	AverageLoss: 0.000929	
+2022-07-10 17:28:30.730 | INFO     | agent:__train_loop:210 - Episode [78600]	AverageReward: 0.410000	AverageStep: 11.675000	
+2022-07-10 17:28:54.252 | DEBUG    | agent:__train_loop:195 - Epoch [852000/1000000]	AverageLoss: 0.001115	
+2022-07-10 17:28:59.048 | INFO     | agent:__train_loop:210 - Episode [78800]	AverageReward: 0.420000	AverageStep: 11.465000	
+2022-07-10 17:29:19.535 | DEBUG    | agent:__train_loop:195 - Epoch [854000/1000000]	AverageLoss: 0.001285	
+2022-07-10 17:29:27.939 | INFO     | agent:__train_loop:210 - Episode [79000]	AverageReward: 0.390000	AverageStep: 11.300000	
+2022-07-10 17:29:44.694 | DEBUG    | agent:__train_loop:195 - Epoch [856000/1000000]	AverageLoss: 0.001115	
+2022-07-10 17:29:55.619 | INFO     | agent:__train_loop:210 - Episode [79200]	AverageReward: 0.355000	AverageStep: 10.655000	
+2022-07-10 17:30:11.299 | DEBUG    | agent:__train_loop:195 - Epoch [858000/1000000]	AverageLoss: 0.001239	
+2022-07-10 17:30:24.256 | INFO     | agent:__train_loop:210 - Episode [79400]	AverageReward: 0.370000	AverageStep: 10.895000	
+2022-07-10 17:30:37.360 | DEBUG    | agent:__train_loop:195 - Epoch [860000/1000000]	AverageLoss: 0.001007	
+2022-07-10 17:30:53.549 | INFO     | agent:__train_loop:210 - Episode [79600]	AverageReward: 0.430000	AverageStep: 11.410000	
+2022-07-10 17:31:03.780 | DEBUG    | agent:__train_loop:195 - Epoch [862000/1000000]	AverageLoss: 0.001053	
+2022-07-10 17:31:21.048 | INFO     | agent:__train_loop:210 - Episode [79800]	AverageReward: 0.335000	AverageStep: 10.465000	
+2022-07-10 17:31:28.692 | DEBUG    | agent:__train_loop:195 - Epoch [864000/1000000]	AverageLoss: 0.001099	
+2022-07-10 17:31:47.801 | INFO     | agent:__train_loop:210 - Episode [80000]	AverageReward: 0.355000	AverageStep: 10.435000	
+2022-07-10 17:31:54.876 | DEBUG    | agent:__train_loop:195 - Epoch [866000/1000000]	AverageLoss: 0.000836	
+2022-07-10 17:32:16.616 | INFO     | agent:__train_loop:210 - Episode [80200]	AverageReward: 0.435000	AverageStep: 11.625000	
+2022-07-10 17:32:19.355 | DEBUG    | agent:__train_loop:195 - Epoch [868000/1000000]	AverageLoss: 0.001130	
+2022-07-10 17:32:44.386 | DEBUG    | agent:__train_loop:195 - Epoch [870000/1000000]	AverageLoss: 0.001192	
+2022-07-10 17:32:45.193 | INFO     | agent:__train_loop:210 - Episode [80400]	AverageReward: 0.435000	AverageStep: 11.395000	
+2022-07-10 17:33:09.970 | DEBUG    | agent:__train_loop:195 - Epoch [872000/1000000]	AverageLoss: 0.001378	
+2022-07-10 17:33:11.814 | INFO     | agent:__train_loop:210 - Episode [80600]	AverageReward: 0.365000	AverageStep: 10.395000	
+2022-07-10 17:33:34.232 | DEBUG    | agent:__train_loop:195 - Epoch [874000/1000000]	AverageLoss: 0.001038	
+2022-07-10 17:33:40.726 | INFO     | agent:__train_loop:210 - Episode [80800]	AverageReward: 0.460000	AverageStep: 11.955000	
+2022-07-10 17:33:59.638 | DEBUG    | agent:__train_loop:195 - Epoch [876000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:34:07.243 | INFO     | agent:__train_loop:210 - Episode [81000]	AverageReward: 0.340000	AverageStep: 10.275000	
+2022-07-10 17:34:25.360 | DEBUG    | agent:__train_loop:195 - Epoch [878000/1000000]	AverageLoss: 0.001239	
+2022-07-10 17:34:36.137 | INFO     | agent:__train_loop:210 - Episode [81200]	AverageReward: 0.405000	AverageStep: 11.190000	
+2022-07-10 17:34:51.223 | DEBUG    | agent:__train_loop:195 - Epoch [880000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:35:03.551 | INFO     | agent:__train_loop:210 - Episode [81400]	AverageReward: 0.375000	AverageStep: 10.670000	
+2022-07-10 17:35:16.760 | DEBUG    | agent:__train_loop:195 - Epoch [882000/1000000]	AverageLoss: 0.001099	
+2022-07-10 17:35:30.454 | INFO     | agent:__train_loop:210 - Episode [81600]	AverageReward: 0.375000	AverageStep: 10.710000	
+2022-07-10 17:35:41.354 | DEBUG    | agent:__train_loop:195 - Epoch [884000/1000000]	AverageLoss: 0.000976	
+2022-07-10 17:35:58.394 | INFO     | agent:__train_loop:210 - Episode [81800]	AverageReward: 0.385000	AverageStep: 11.170000	
+2022-07-10 17:36:06.831 | DEBUG    | agent:__train_loop:195 - Epoch [886000/1000000]	AverageLoss: 0.000790	
+2022-07-10 17:36:28.384 | INFO     | agent:__train_loop:210 - Episode [82000]	AverageReward: 0.420000	AverageStep: 11.865000	
+2022-07-10 17:36:32.617 | DEBUG    | agent:__train_loop:195 - Epoch [888000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:36:55.229 | INFO     | agent:__train_loop:210 - Episode [82200]	AverageReward: 0.360000	AverageStep: 10.365000	
+2022-07-10 17:36:57.843 | DEBUG    | agent:__train_loop:195 - Epoch [890000/1000000]	AverageLoss: 0.000991	
+2022-07-10 17:37:22.852 | DEBUG    | agent:__train_loop:195 - Epoch [892000/1000000]	AverageLoss: 0.001440	
+2022-07-10 17:37:22.962 | INFO     | agent:__train_loop:210 - Episode [82400]	AverageReward: 0.400000	AverageStep: 11.150000	
+2022-07-10 17:37:47.752 | DEBUG    | agent:__train_loop:195 - Epoch [894000/1000000]	AverageLoss: 0.001301	
+2022-07-10 17:37:51.018 | INFO     | agent:__train_loop:210 - Episode [82600]	AverageReward: 0.420000	AverageStep: 11.155000	
+2022-07-10 17:38:13.757 | DEBUG    | agent:__train_loop:195 - Epoch [896000/1000000]	AverageLoss: 0.001007	
+2022-07-10 17:38:18.965 | INFO     | agent:__train_loop:210 - Episode [82800]	AverageReward: 0.365000	AverageStep: 11.010000	
+2022-07-10 17:38:38.832 | DEBUG    | agent:__train_loop:195 - Epoch [898000/1000000]	AverageLoss: 0.001192	
+2022-07-10 17:38:46.335 | INFO     | agent:__train_loop:210 - Episode [83000]	AverageReward: 0.405000	AverageStep: 10.925000	
+2022-07-10 17:39:03.044 | DEBUG    | agent:__train_loop:195 - Epoch [900000/1000000]	AverageLoss: 0.000929	
+2022-07-10 17:39:15.293 | INFO     | agent:__train_loop:210 - Episode [83200]	AverageReward: 0.480000	AverageStep: 11.945000	
+2022-07-10 17:39:27.363 | DEBUG    | agent:__train_loop:195 - Epoch [902000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:39:44.195 | INFO     | agent:__train_loop:210 - Episode [83400]	AverageReward: 0.435000	AverageStep: 11.400000	
+2022-07-10 17:39:54.017 | DEBUG    | agent:__train_loop:195 - Epoch [904000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:40:12.314 | INFO     | agent:__train_loop:210 - Episode [83600]	AverageReward: 0.410000	AverageStep: 10.905000	
+2022-07-10 17:40:18.786 | DEBUG    | agent:__train_loop:195 - Epoch [906000/1000000]	AverageLoss: 0.001378	
+2022-07-10 17:40:40.274 | INFO     | agent:__train_loop:210 - Episode [83800]	AverageReward: 0.420000	AverageStep: 11.300000	
+2022-07-10 17:40:43.575 | DEBUG    | agent:__train_loop:195 - Epoch [908000/1000000]	AverageLoss: 0.001099	
+2022-07-10 17:41:07.218 | INFO     | agent:__train_loop:210 - Episode [84000]	AverageReward: 0.415000	AverageStep: 10.575000	
+2022-07-10 17:41:09.064 | DEBUG    | agent:__train_loop:195 - Epoch [910000/1000000]	AverageLoss: 0.001022	
+2022-07-10 17:41:34.722 | DEBUG    | agent:__train_loop:195 - Epoch [912000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:41:35.337 | INFO     | agent:__train_loop:210 - Episode [84200]	AverageReward: 0.400000	AverageStep: 10.965000	
+2022-07-10 17:42:00.116 | DEBUG    | agent:__train_loop:195 - Epoch [914000/1000000]	AverageLoss: 0.001130	
+2022-07-10 17:42:02.145 | INFO     | agent:__train_loop:210 - Episode [84400]	AverageReward: 0.380000	AverageStep: 10.555000	
+2022-07-10 17:42:25.633 | DEBUG    | agent:__train_loop:195 - Epoch [916000/1000000]	AverageLoss: 0.001130	
+2022-07-10 17:42:29.351 | INFO     | agent:__train_loop:210 - Episode [84600]	AverageReward: 0.410000	AverageStep: 10.805000	
+2022-07-10 17:42:50.156 | DEBUG    | agent:__train_loop:195 - Epoch [918000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:42:58.939 | INFO     | agent:__train_loop:210 - Episode [84800]	AverageReward: 0.500000	AverageStep: 12.190000	
+2022-07-10 17:43:14.701 | DEBUG    | agent:__train_loop:195 - Epoch [920000/1000000]	AverageLoss: 0.001285	
+2022-07-10 17:43:26.540 | INFO     | agent:__train_loop:210 - Episode [85000]	AverageReward: 0.400000	AverageStep: 11.075000	
+2022-07-10 17:43:38.968 | DEBUG    | agent:__train_loop:195 - Epoch [922000/1000000]	AverageLoss: 0.001239	
+2022-07-10 17:43:56.096 | INFO     | agent:__train_loop:210 - Episode [85200]	AverageReward: 0.475000	AverageStep: 12.010000	
+2022-07-10 17:44:03.544 | DEBUG    | agent:__train_loop:195 - Epoch [924000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:44:25.394 | INFO     | agent:__train_loop:210 - Episode [85400]	AverageReward: 0.510000	AverageStep: 12.175000	
+2022-07-10 17:44:28.033 | DEBUG    | agent:__train_loop:195 - Epoch [926000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:44:52.413 | INFO     | agent:__train_loop:210 - Episode [85600]	AverageReward: 0.385000	AverageStep: 10.635000	
+2022-07-10 17:44:53.283 | DEBUG    | agent:__train_loop:195 - Epoch [928000/1000000]	AverageLoss: 0.001254	
+2022-07-10 17:45:18.679 | DEBUG    | agent:__train_loop:195 - Epoch [930000/1000000]	AverageLoss: 0.001285	
+2022-07-10 17:45:21.020 | INFO     | agent:__train_loop:210 - Episode [85800]	AverageReward: 0.445000	AverageStep: 11.240000	
+2022-07-10 17:45:43.309 | DEBUG    | agent:__train_loop:195 - Epoch [932000/1000000]	AverageLoss: 0.001254	
+2022-07-10 17:45:49.767 | INFO     | agent:__train_loop:210 - Episode [86000]	AverageReward: 0.470000	AverageStep: 11.660000	
+2022-07-10 17:46:08.548 | DEBUG    | agent:__train_loop:195 - Epoch [934000/1000000]	AverageLoss: 0.001378	
+2022-07-10 17:46:17.875 | INFO     | agent:__train_loop:210 - Episode [86200]	AverageReward: 0.440000	AverageStep: 11.345000	
+2022-07-10 17:46:32.893 | DEBUG    | agent:__train_loop:195 - Epoch [936000/1000000]	AverageLoss: 0.001099	
+2022-07-10 17:46:46.892 | INFO     | agent:__train_loop:210 - Episode [86400]	AverageReward: 0.450000	AverageStep: 11.590000	
+2022-07-10 17:46:58.330 | DEBUG    | agent:__train_loop:195 - Epoch [938000/1000000]	AverageLoss: 0.001239	
+2022-07-10 17:47:14.912 | INFO     | agent:__train_loop:210 - Episode [86600]	AverageReward: 0.430000	AverageStep: 10.945000	
+2022-07-10 17:47:24.349 | DEBUG    | agent:__train_loop:195 - Epoch [940000/1000000]	AverageLoss: 0.001254	
+2022-07-10 17:47:42.725 | INFO     | agent:__train_loop:210 - Episode [86800]	AverageReward: 0.370000	AverageStep: 10.620000	
+2022-07-10 17:47:50.215 | DEBUG    | agent:__train_loop:195 - Epoch [942000/1000000]	AverageLoss: 0.001270	
+2022-07-10 17:48:12.115 | INFO     | agent:__train_loop:210 - Episode [87000]	AverageReward: 0.490000	AverageStep: 11.520000	
+2022-07-10 17:48:15.455 | DEBUG    | agent:__train_loop:195 - Epoch [944000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:48:40.723 | DEBUG    | agent:__train_loop:195 - Epoch [946000/1000000]	AverageLoss: 0.001161	
+2022-07-10 17:48:41.897 | INFO     | agent:__train_loop:210 - Episode [87200]	AverageReward: 0.465000	AverageStep: 11.830000	
+2022-07-10 17:49:05.556 | DEBUG    | agent:__train_loop:195 - Epoch [948000/1000000]	AverageLoss: 0.001223	
+2022-07-10 17:49:12.082 | INFO     | agent:__train_loop:210 - Episode [87400]	AverageReward: 0.500000	AverageStep: 12.075000	
+2022-07-10 17:49:31.698 | DEBUG    | agent:__train_loop:195 - Epoch [950000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:49:40.135 | INFO     | agent:__train_loop:210 - Episode [87600]	AverageReward: 0.430000	AverageStep: 10.845000	
+2022-07-10 17:49:56.337 | DEBUG    | agent:__train_loop:195 - Epoch [952000/1000000]	AverageLoss: 0.001208	
+2022-07-10 17:50:09.545 | INFO     | agent:__train_loop:210 - Episode [87800]	AverageReward: 0.430000	AverageStep: 11.630000	
+2022-07-10 17:50:22.326 | DEBUG    | agent:__train_loop:195 - Epoch [954000/1000000]	AverageLoss: 0.001208	
+2022-07-10 17:50:37.126 | INFO     | agent:__train_loop:210 - Episode [88000]	AverageReward: 0.405000	AverageStep: 10.625000	
+2022-07-10 17:50:48.778 | DEBUG    | agent:__train_loop:195 - Epoch [956000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:51:06.638 | INFO     | agent:__train_loop:210 - Episode [88200]	AverageReward: 0.425000	AverageStep: 11.225000	
+2022-07-10 17:51:14.764 | DEBUG    | agent:__train_loop:195 - Epoch [958000/1000000]	AverageLoss: 0.001192	
+2022-07-10 17:51:36.937 | INFO     | agent:__train_loop:210 - Episode [88400]	AverageReward: 0.485000	AverageStep: 12.090000	
+2022-07-10 17:51:39.645 | DEBUG    | agent:__train_loop:195 - Epoch [960000/1000000]	AverageLoss: 0.001192	
+2022-07-10 17:52:05.463 | DEBUG    | agent:__train_loop:195 - Epoch [962000/1000000]	AverageLoss: 0.000929	
+2022-07-10 17:52:07.332 | INFO     | agent:__train_loop:210 - Episode [88600]	AverageReward: 0.475000	AverageStep: 11.795000	
+2022-07-10 17:52:31.053 | DEBUG    | agent:__train_loop:195 - Epoch [964000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:52:35.011 | INFO     | agent:__train_loop:210 - Episode [88800]	AverageReward: 0.440000	AverageStep: 10.830000	
+2022-07-10 17:52:56.517 | DEBUG    | agent:__train_loop:195 - Epoch [966000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:53:04.046 | INFO     | agent:__train_loop:210 - Episode [89000]	AverageReward: 0.445000	AverageStep: 11.460000	
+2022-07-10 17:53:22.021 | DEBUG    | agent:__train_loop:195 - Epoch [968000/1000000]	AverageLoss: 0.001239	
+2022-07-10 17:53:31.028 | INFO     | agent:__train_loop:210 - Episode [89200]	AverageReward: 0.400000	AverageStep: 10.510000	
+2022-07-10 17:53:47.547 | DEBUG    | agent:__train_loop:195 - Epoch [970000/1000000]	AverageLoss: 0.001099	
+2022-07-10 17:53:59.162 | INFO     | agent:__train_loop:210 - Episode [89400]	AverageReward: 0.455000	AverageStep: 10.985000	
+2022-07-10 17:54:13.448 | DEBUG    | agent:__train_loop:195 - Epoch [972000/1000000]	AverageLoss: 0.001239	
+2022-07-10 17:54:25.717 | INFO     | agent:__train_loop:210 - Episode [89600]	AverageReward: 0.360000	AverageStep: 10.090000	
+2022-07-10 17:54:39.365 | DEBUG    | agent:__train_loop:195 - Epoch [974000/1000000]	AverageLoss: 0.001208	
+2022-07-10 17:54:55.063 | INFO     | agent:__train_loop:210 - Episode [89800]	AverageReward: 0.490000	AverageStep: 11.760000	
+2022-07-10 17:55:04.177 | DEBUG    | agent:__train_loop:195 - Epoch [976000/1000000]	AverageLoss: 0.001146	
+2022-07-10 17:55:24.206 | INFO     | agent:__train_loop:210 - Episode [90000]	AverageReward: 0.505000	AverageStep: 11.730000	
+2022-07-10 17:55:29.035 | DEBUG    | agent:__train_loop:195 - Epoch [978000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:55:53.843 | DEBUG    | agent:__train_loop:195 - Epoch [980000/1000000]	AverageLoss: 0.001378	
+2022-07-10 17:55:54.965 | INFO     | agent:__train_loop:210 - Episode [90200]	AverageReward: 0.530000	AverageStep: 12.330000	
+2022-07-10 17:56:19.809 | DEBUG    | agent:__train_loop:195 - Epoch [982000/1000000]	AverageLoss: 0.001084	
+2022-07-10 17:56:23.829 | INFO     | agent:__train_loop:210 - Episode [90400]	AverageReward: 0.455000	AverageStep: 11.130000	
+2022-07-10 17:56:45.737 | DEBUG    | agent:__train_loop:195 - Epoch [984000/1000000]	AverageLoss: 0.001316	
+2022-07-10 17:56:52.708 | INFO     | agent:__train_loop:210 - Episode [90600]	AverageReward: 0.450000	AverageStep: 11.020000	
+2022-07-10 17:57:12.707 | DEBUG    | agent:__train_loop:195 - Epoch [986000/1000000]	AverageLoss: 0.000960	
+2022-07-10 17:57:20.543 | INFO     | agent:__train_loop:210 - Episode [90800]	AverageReward: 0.420000	AverageStep: 10.520000	
+2022-07-10 17:57:38.454 | DEBUG    | agent:__train_loop:195 - Epoch [988000/1000000]	AverageLoss: 0.001455	
+2022-07-10 17:57:49.085 | INFO     | agent:__train_loop:210 - Episode [91000]	AverageReward: 0.470000	AverageStep: 11.100000	
+2022-07-10 17:58:03.712 | DEBUG    | agent:__train_loop:195 - Epoch [990000/1000000]	AverageLoss: 0.001177	
+2022-07-10 17:58:18.356 | INFO     | agent:__train_loop:210 - Episode [91200]	AverageReward: 0.515000	AverageStep: 11.700000	
+2022-07-10 17:58:29.023 | DEBUG    | agent:__train_loop:195 - Epoch [992000/1000000]	AverageLoss: 0.001378	
+2022-07-10 17:58:47.255 | INFO     | agent:__train_loop:210 - Episode [91400]	AverageReward: 0.500000	AverageStep: 11.325000	
+2022-07-10 17:58:54.526 | DEBUG    | agent:__train_loop:195 - Epoch [994000/1000000]	AverageLoss: 0.001223	
+2022-07-10 17:59:17.072 | INFO     | agent:__train_loop:210 - Episode [91600]	AverageReward: 0.500000	AverageStep: 11.675000	
+2022-07-10 17:59:20.036 | DEBUG    | agent:__train_loop:195 - Epoch [996000/1000000]	AverageLoss: 0.001347	
+2022-07-10 17:59:45.572 | DEBUG    | agent:__train_loop:195 - Epoch [998000/1000000]	AverageLoss: 0.001471	
+2022-07-10 17:59:46.255 | INFO     | agent:__train_loop:210 - Episode [91800]	AverageReward: 0.490000	AverageStep: 11.435000	
+2022-07-10 18:00:11.440 | DEBUG    | agent:__train_loop:195 - Epoch [1000000/1000000]	AverageLoss: 0.001269		

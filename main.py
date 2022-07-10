@@ -11,7 +11,7 @@ import buffer
 """
 ***ENTRANCE HERE***
 TORCH:1.9.0
-GYM:1.19.0
+GYM:0.19.0
 CREATED BY SIYUEXI
 2022.07.01
 """
@@ -21,8 +21,8 @@ def args():
     parser.add_argument("-m","--mode", type=str, default=None, help="Training or Testing?")
     parser.add_argument("--ddqn", type=bool, default=True, help="using ddqn structure.")
     parser.add_argument("--deepmind", type=bool, default=True, help="using deepmind wrapper.")
-    parser.add_argument("--lite", type=bool, default=False, help="using lite buffer")
-    parser.add_argument("--train_start", type=int, default=200000, help="training starts after x epoch of experience collecting.")
+    parser.add_argument("--lite", type=bool, default=True, help="using lite buffer")
+    parser.add_argument("--train_start", type=int, default=5000, help="training starts after x epoch of experience collecting.")
     parser.add_argument("--test_start", type=int, default=10, help="testing starts at x epoch of checkpoints.")
 
     return parser

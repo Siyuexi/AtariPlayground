@@ -7,6 +7,30 @@ COPIED FROM OTHER GIT REPOSITORIES AND WHAT THE HELL IS PARAMETER K IN STACKFRAM
 CREATED BY SIYUEXI
 2022.07.02
 """
+class PreprocessFrame(gym.ObservationWrapper):
+    """
+    preprocess the observation of env
+    """
+
+    def __init__(self, env):
+        super(PreprocessFrame, self).__init__(env)
+        self.observation_space = gym.spaces.Box(low=0, high=255, shape=(84, 84, 1))
+
+    def observation(self, observation):
+        """
+        raw data: [210, 160, 3]
+        processed data: [84, 84, 1]
+        :param observation:
+        :return:
+        """
+        img = np.reshape(observation, [210, 160, 3]).astype(np.float32)
+        img = img[:, :, 0] * 0.299 + img[:, :, 1] * 0.587 + img[:, :, 2] * 0.114
+        resized_screen = cv2.resize(img, (84, 110), interpolation=cv2.INTER_LINEAR)
+        x_t = resized_screen[18:102, :]
+        x_t = np.reshape(x_t, [84, 84, 1])
+        return x_t.astype(np.uint8)
+
+
 class LazyFrames(object):
     # a data structure for stacked frames
     def __init__(self, frames):
@@ -204,24 +228,26 @@ def get_env(name,noop_max, skip, width, height, n, seed, deepmind_wrapper):
     
     env = gym.make(name, obs_type='image')
 
+    # normal wrappers
+    env = EpisodicLifeEnv(env)
+    env = NoopResetEnv(env, noop_max)
+    env = MaxAndSkipEnv(env, skip)
+    env = ClipRewardEnv(env)
+    if 'FIRE' in env.unwrapped.get_action_meanings():
+        env = FireResetEnv(env) 
+    
+    # frame wrappers
     if deepmind_wrapper:
-        # normal wrappers
-        env = EpisodicLifeEnv(env)
-        env = NoopResetEnv(env, noop_max)
-        env = MaxAndSkipEnv(env, skip)
-        env = ClipRewardEnv(env)
-        if 'FIRE' in env.unwrapped.get_action_meanings():
-            env = FireResetEnv(env)    
-
-        # frame wrappers
+        env = PreprocessFrame(env)
+    else:
         env = FrameProcessEnv(env, width, height, True)
         env = FrameStackEnv(env, n)
         env = FrameTransposeEnv(env)
 
-        # configurate seed
-        env.seed(seed)
-        env.action_space.seed(seed)
-        env.observation_space.seed(seed)
+    # configurate seed
+    env.seed(seed)
+    env.action_space.seed(seed)
+    env.observation_space.seed(seed)
 
     return env
 

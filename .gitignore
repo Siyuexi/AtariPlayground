@@ -1,4 +1,4 @@
 __pycache__
 checkpoint/temp/*
-log/uru/*
-log/viz/*
+# log/uru/*
+# log/viz/*

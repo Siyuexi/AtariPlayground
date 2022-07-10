@@ -55,7 +55,9 @@ class Player():
             action = self.env.action_space.sample()
             # interact with environment
             state, reward, done, info = self.env.step(action)
-            self.mem.push_quadro(last_state, action, reward, state)
+            """ self.mem.push_quadro(last_state, action, reward, state) """
+            cur_index = self.mem.store_memory_obs(last_state)
+            self.mem.store_memory_effect(cur_index, action, reward, done)
             if done:
                 state = self.env.reset()
             last_state = state
@@ -81,9 +83,11 @@ class Player():
         self.subnet = self.subnet.to(self.device)
 
         # if exists, load parameters from former model
+        load_flag = False
         if os.path.exists("./checkpoint/" + self.game + ".pth"):
             self.net.load_state_dict(torch.load("./checkpoint/" + self.game + ".pth"))
             self.subnet.load_state_dict(torch.load("./checkpoint/" + self.game + ".pth"))
+            load_flag = True
             print("latest checkpoint loaded...")
         
         # log settings
@@ -105,48 +109,67 @@ class Player():
 
         # main loop
         # convert list to numpy array to tensor
-        state = torch.from_numpy(np.array(self.env.reset())).unsqueeze(0).float().to(self.device) # state shape: [1, k, w, h] tensor 32bit
+        last_state = self.env.reset()
         print("training agent...")
         # in DRL, one epoch = one step (or multiple steps) TD process
         # in DRL, one episode = one ended game
+        epsilon_ = epsilon
         for step in tqdm(range(1, epoch + 1)):
+            # encode obs as k frames state
+            """ last_state = torch.from_numpy(np.array(last_state)).unsqueeze(0).float().to(self.device) # state shape: [1, k, w, h] tensor float """
+            encoded_state = self.mem.encoder_recent_observation()
+            encoded_state = change_to_tensor(encoded_state).unsqueeze(0)
             # get expierence
-            last_state = state
-            # viz.images(state[0], win="current frames")
-            if np.random.random() > epsilon:
-                action = self.net(state).max(dim=1)[1].cpu().numpy()
+            # if it is a new trained model, epsilon_ changed from 1 to epsilon linearly to accelerate training
+            if ~load_flag:
+                epsilon_ = 1 - (1 - epsilon) * (1.0 * step / epoch)
+            if np.random.random() > epsilon_:
+                """ action = self.net(last_state).max(dim=1)[1].item() """
+                action = self.net(encoded_state).max(dim=1)[1].item()
             else: 
                 action = self.env.action_space.sample()
 
             state, reward, done, info = self.env.step(action)
-            state = torch.from_numpy(np.array(state)).unsqueeze(0).float().to(self.device) # state shape: [1, k, w, h] tensor 32bit
+            """
             last_state = last_state.squeeze(0).cpu().byte().numpy() # last_state shape: [k, w, h] array 8bit
-            last_state_ = state.squeeze(0).cpu().byte().numpy() # last_state_ shape: [k, w, h] array 8bit
-            self.mem.push_quadro(last_state, action, reward, last_state_)
+            self.mem.push_quadro(last_state, action, reward, state)
+            """
+            cur_index = self.mem.store_memory_obs(last_state)
+            self.mem.store_memory_effect(cur_index, action, reward, done)
 
             mean_reward += reward
             mean_step += 1
             if done:
-                self.env.seed()
-                state = torch.from_numpy(np.array(self.env.reset())).unsqueeze(0).float().to(self.device) # state shape: [1, k, w, h] tensor 32bit
+                # self.env.seed()
+                # state = torch.from_numpy(np.array(self.env.reset())).unsqueeze(0).float().to(self.device) # state shape: [1, k, w, h] tensor 32bit
+                state = self.env.reset()
                 episode += 1
                 avg_reward += mean_reward
                 avg_step += mean_step
                 mean_reward = 0
                 mean_step = 0
+            last_state = state
 
             # get backward
             if step % batch_size == 0:
+                """
                 state_batch, action_batch, reward_batch, state_batch_, index_batch = self.mem.get_batch(batch_size)
                 state_batch = torch.from_numpy(state_batch).float().to(self.device) # s shape: [b, a] float
                 action_batch = torch.from_numpy(action_batch).unsqueeze(1).long().to(self.device) # a shape: [b. 1] long
                 reward_batch = torch.from_numpy(reward_batch).unsqueeze(1).float().to(self.device)# r shape: [b, 1] float
                 state_batch_ = torch.from_numpy(state_batch_).float().to(self.device) # s_ shape: [b, a] float
+                """
+                state_batch, state_batch_, action_batch, reward_batch, _ = self.mem.sample_memories(batch_size)
+                state_batch, state_batch_ = change_to_tensor(state_batch), change_to_tensor(state_batch_)
+                action_batch, reward_batch = change_to_tensor(action_batch, torch.int64), change_to_tensor(reward_batch)
+
                 
                 # estimate Q-Star 
                 q_values = self.net(state_batch) # q shape: [b, a] tensor float
                 q_pred = q_values.gather(dim=1, index=action_batch) # q shape: [b, 1] tensor float
                 # estimate Q-Star_
+
+                # Double DQN
                 q_values_ = self.net(state_batch_).detach() # q shape: [b, a] tensor float
                 action_batch_ = q_values_.max(dim=1)[1].unsqueeze(1) # a_ shape: [b, 1] int
                 q_target = reward_batch + gamma * self.subnet(state_batch_).gather(dim=1, index=action_batch_) # q shape: [b, 1] tensor float
@@ -155,10 +178,12 @@ class Player():
                 loss = criterion(q_pred, q_target)
                 avg_loss += loss.item()
 
-                # update error weight
+                """
+                update error weight
                 error = loss
                 error = error.detach().cpu().numpy()
                 self.mem.set_batch(error, index_batch)
+                """
 
                 # backward
                 optimizer.zero_grad()
@@ -241,6 +266,14 @@ class Player():
         
     def __experience_visualize(self):
         pass
+
+
+def change_to_tensor(data_np, dtype=torch.float32):
+
+    data_tensor = torch.from_numpy(data_np).type(dtype)
+    if torch.cuda.is_available():
+        data_tensor = data_tensor.cuda()
+    return data_tensor
 
 
 """UNIT TESTING"""

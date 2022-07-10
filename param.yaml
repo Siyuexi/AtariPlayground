@@ -2,24 +2,23 @@
 # CREATED BY SIYUEXI
 # 2022.07.02
 breakout: 
-  name: "BreakoutNoFrameskip-v4"
-  type: "CRD2QN"
+  name: "Breakout-v0"     # name of the environment
+  type: "CRD2QN"          # type of the model
   seed: 0
   width: 84
   height: 84
-  n_actions: 4
-  n_states: 4
-  skip: 4
-  memory_capacity: 400000
-  noop_max: 30
-  # hyper_params for training only
-  hyper_params: 
+  n_actions: 4            # num of actions
+  n_states: 4             # num of stacked states/frames
+  skip: 4                 # num of skiped frames
+  noop_max: 30            # num of no operation frames
+  memory_capacity: 10000  
+  hyper_params:           # hyper_params for training only
     gamma: 0.99
     epsilon: 0.01
     batch_size: 32
     epoch: 1000000
     lr: 0.00025
-    f_save: 100000
-    f_update: 10000
-    f_epoch: 2000
-    f_episode: 200
+    f_save: 100000        # frequency of model saving
+    f_update: 100000       # frequency of sub model updating
+    f_epoch: 2000         # frequency of loss calculating
+    f_episode: 200        # frequency of reward calculating
