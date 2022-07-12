@@ -11,9 +11,11 @@ CREATED BY SIYUEXI
 2022.07.04
 """
 class Player():
-    def __init__(self, net, env, mem, hp, game, mode, train_start, test_start) -> None:
+    def __init__(self, id, net, env, mem, hp, game, mode, train_start, test_start, ddqn) -> None:
+        self.id = id
         self.game = game
         self.mode = mode
+        self.ddqn = ddqn
         # infrastructure
         self.net = net[0]
         self.subnet = net[1]
@@ -84,17 +86,17 @@ class Player():
 
         # if exists, load parameters from former model
         load_flag = False
-        if os.path.exists("./checkpoint/" + self.game + ".pth"):
-            self.net.load_state_dict(torch.load("./checkpoint/" + self.game + ".pth"))
-            self.subnet.load_state_dict(torch.load("./checkpoint/" + self.game + ".pth"))
+        if os.path.exists("./checkpoint/" + self.game + self.id + ".pth"):
+            self.net.load_state_dict(torch.load("./checkpoint/" + self.game + self.id + ".pth"))
+            self.subnet.load_state_dict(torch.load("./checkpoint/" + self.game + self.id + ".pth"))
             load_flag = True
             print("latest checkpoint loaded...")
         
         # log settings
-        viz = visdom.Visdom(env="player_" + self.game, log_to_filename="./log/viz/" + self.game + ".log")
+        viz = visdom.Visdom(env="player_" + self.game + self.id, log_to_filename="./log/viz/" + self.game + self.id + ".log")
         log = loguru.logger
         # log.remove(handler_id=None)
-        log.add("./log/uru/" + self.game + ".log")
+        log.add("./log/uru/" + self.game + self.id + ".log")
         
         # cache 
         episode = 1 # number of ended games
@@ -140,7 +142,6 @@ class Player():
             mean_reward += reward
             mean_step += 1
             if done:
-                # self.env.seed()
                 # state = torch.from_numpy(np.array(self.env.reset())).unsqueeze(0).float().to(self.device) # state shape: [1, k, w, h] tensor 32bit
                 state = self.env.reset()
                 episode += 1
@@ -167,13 +168,18 @@ class Player():
                 # estimate Q-Star 
                 q_values = self.net(state_batch) # q shape: [b, a] tensor float
                 q_pred = q_values.gather(dim=1, index=action_batch) # q shape: [b, 1] tensor float
-                # estimate Q-Star_
+                # estimate Q-Star_ : Target Network or Double DQN
 
-                # Double DQN
-                q_values_ = self.net(state_batch_).detach() # q shape: [b, a] tensor float
-                action_batch_ = q_values_.max(dim=1)[1].unsqueeze(1) # a_ shape: [b, 1] int
-                q_target = reward_batch + gamma * self.subnet(state_batch_).gather(dim=1, index=action_batch_) # q shape: [b, 1] tensor float
-
+                if self.ddqn:
+                    # Double DQN
+                    q_values_ = self.net(state_batch_).detach() # q shape: [b, a] tensor float
+                    action_batch_ = q_values_.max(dim=1)[1].unsqueeze(1) # a_ shape: [b, 1] int
+                    q_target = reward_batch + gamma * self.subnet(state_batch_).gather(dim=1, index=action_batch_) # q shape: [b, 1] tensor float
+                else:
+                    # Target Network
+                    q_values_ = self.subnet(state_batch_).detach()
+                    q_target = reward_batch + gamma * q_values_.max(dim=1)[0].unsqueeze(1)
+                    
                 # calculating loss
                 loss = criterion(q_pred, q_target)
                 avg_loss += loss.item()
@@ -222,18 +228,18 @@ class Player():
 
             # save checkpoint per f_save steps
             if step % f_save == 0:
-                torch.save(self.net.state_dict(), "./checkpoint/temp/" + self.game + "_" + str(log_step) + ".pth")
+                torch.save(self.net.state_dict(), "./checkpoint/temp/" + self.game + self.id + str(log_step) + ".pth")
                 
             
         # save final model parameters
-        torch.save(self.net.state_dict(), "./checkpoint/" + self.game + ".pth")
+        torch.save(self.net.state_dict(), "./checkpoint/" + self.game + self.id + ".pth")
         print("agent training finished...")
 
     
     def __test_loop(self):
         # loading parameters
-        assert os.path.exists("./checkpoint/" + self.game + ".pth"), "CHECKPOINT NOT EXSITS."
-        self.net.load_state_dict(torch.load("./checkpoint/" + self.game + ".pth"))
+        assert os.path.exists("./checkpoint/" + self.game + self.id + ".pth"), "CHECKPOINT NOT EXSITS."
+        self.net.load_state_dict(torch.load("./checkpoint/" + self.game + self.id + ".pth"))
         self.net.to(self.device)
         # cache
         episode = 0

@@ -19,11 +19,12 @@ def args():
     parser = argparse.ArgumentParser("CHOOSE YOUR GAME")
     parser.add_argument("-g","--game", type=str, default=None, help="The game that you wanna play.")
     parser.add_argument("-m","--mode", type=str, default=None, help="Training or Testing?")
+    parser.add_argument("-i", "--id", type=str, default="", help="special label for a training task")
     parser.add_argument("--ddqn", type=bool, default=True, help="using ddqn structure.")
     parser.add_argument("--deepmind", type=bool, default=True, help="using deepmind wrapper.")
     parser.add_argument("--lite", type=bool, default=True, help="using lite buffer")
-    parser.add_argument("--train_start", type=int, default=5000, help="training starts after x epoch of experience collecting.")
-    parser.add_argument("--test_start", type=int, default=10, help="testing starts at x epoch of checkpoints.")
+    parser.add_argument("--train_start", type=int, default=200000, help="training starts after x epoch of experience collecting.")
+    parser.add_argument("--test_start", type=int, default=1000000, help="testing starts at x epoch of checkpoints.")
 
     return parser
 
@@ -32,6 +33,7 @@ def main(args):
     # initialization
     try:
         # parsing yaml settings
+        id = args.id
         game = args.game
         mode = args.mode
         train_start = args.train_start
@@ -39,8 +41,8 @@ def main(args):
         param = yaml.load(open("param.yaml"), Loader=yaml.SafeLoader)[game]
         
         # building infrastructure
-        net = model.get_net(param['type'], param['n_actions'], param['n_states'], args.ddqn)
-        env = wrap.get_env(param['name'], param['noop_max'], param['skip'], param['width'], param['height'], param['n_states'], param['seed'], args.deepmind)
+        net = model.get_net(param['type'], param['n_actions'], param['n_states'])
+        env = wrap.get_env(param['name'], param['noop_max'], param['skip'], param['width'], param['height'], param['n_states'], args.deepmind)
         mem = buffer.get_mem(param['memory_capacity'], param['width'], param['height'], param['n_states'], args.lite)
         hp = param['hyper_params']
 
@@ -57,7 +59,7 @@ def main(args):
         os.makedirs("./log/viz")
 
     # game begin
-    player = agent.Player(net, env, mem, hp, game, mode, train_start, test_start)
+    player = agent.Player(id, net, env, mem, hp, game, mode, train_start, test_start, args.ddqn)
     player.execute()
 
 

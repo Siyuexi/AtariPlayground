@@ -3,22 +3,21 @@
 # 2022.07.02
 breakout: 
   name: "Breakout-v0"     # name of the environment
-  type: "CRD2QN"          # type of the model
-  seed: 0
+  type: "D2QN"          # type of the model
   width: 84
   height: 84
   n_actions: 4            # num of actions
   n_states: 4             # num of stacked states/frames
   skip: 4                 # num of skiped frames
   noop_max: 30            # num of no operation frames
-  memory_capacity: 10000  
+  memory_capacity: 500000
   hyper_params:           # hyper_params for training only
     gamma: 0.99
-    epsilon: 0.01
+    epsilon: 0.1
     batch_size: 32
-    epoch: 1000000
+    epoch: 30000000
     lr: 0.00025
     f_save: 100000        # frequency of model saving
     f_update: 100000       # frequency of sub model updating
-    f_epoch: 2000         # frequency of loss calculating
-    f_episode: 200        # frequency of reward calculating
+    f_epoch: 10000         # frequency of loss calculating
+    f_episode: 1000        # frequency of reward calculating

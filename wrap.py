@@ -224,7 +224,7 @@ class EpisodicLifeEnv(gym.Wrapper):
 
 
 
-def get_env(name,noop_max, skip, width, height, n, seed, deepmind_wrapper):
+def get_env(name,noop_max, skip, width, height, n, deepmind_wrapper):
     
     env = gym.make(name, obs_type='image')
 
@@ -243,11 +243,6 @@ def get_env(name,noop_max, skip, width, height, n, seed, deepmind_wrapper):
         env = FrameProcessEnv(env, width, height, True)
         env = FrameStackEnv(env, n)
         env = FrameTransposeEnv(env)
-
-    # configurate seed
-    env.seed(seed)
-    env.action_space.seed(seed)
-    env.observation_space.seed(seed)
 
     return env
 

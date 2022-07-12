@@ -30,7 +30,7 @@ class DQN(nn.Module):
         return y
 
 
-class DuelingDQN(nn.Module):
+class D2QN(nn.Module):
     def __init__(self, n_actions, n_states):
         super().__init__()
         self.n_actions = n_actions
@@ -73,15 +73,15 @@ class CRD2QN(nn.Module):
         self.n_actions = n_actions
         self.n_states = n_states
         # cnn for single feature extraction
-        self.conv1 = nn.Conv2d(n_actions, 32, 8, 4, groups=n_actions)
-        self.conv2 = nn.Conv2d(32, 64, 4, 2, groups=n_actions)
-        self.conv3 = nn.Conv2d(64, 64, 3, 1, groups=n_actions)
+        self.conv1 = nn.Conv2d(n_actions, 32, 8, 4)
+        self.conv2 = nn.Conv2d(32, 64, 4, 2)
+        self.conv3 = nn.Conv2d(64, 64, 3, 1)
         # rnn for multiple feature concatenation
-        self.recu1 = nn.RNN(7*7*16, n_states, 1, batch_first=True)
-        self.recu2 = nn.RNN(7*7*16, n_states, 1, batch_first=True)
+        self.recu1 = nn.GRU(7*7*64, 512, 1, batch_first=True)
+        self.recu2 = nn.GRU(7*7*64, 512, 1, batch_first=True)
         # fc for prediction
-        self.fc1 = nn.Linear(n_states, n_states)
-        self.fc2 = nn.Linear(n_states, 1)
+        self.fc_adv = nn.Linear(512, n_states)
+        self.fc_val = nn.Linear(512, 1)
 
     def forward(self,x):
         x = self.conv1(x)
@@ -96,29 +96,31 @@ class CRD2QN(nn.Module):
         a = a[0,:,:].view(x.size(0),-1)
         v = v[0,:,:].view(x.size(0),-1)
 
-        a = self.fc1(a)
-        v = self.fc2(v)
+        a = self.fc_adv(a)
+        v = self.fc_val(v)
 
         y = a + v.expand(x.size(0), self.n_actions) - a.mean(1).unsqueeze(1).expand(x.size(0), self.n_actions)
 
         return y
 
 
-def get_net(type, n_actions, n_states, ddqn_model):
+def get_net(type, n_actions, n_states):
     
     if type == "CRD2QN":
         net = CRD2QN(n_actions, n_states)
-    elif type == "DuelingDQN":
-        net = DuelingDQN(n_actions, n_states)
+        sub_net = CRD2QN(n_actions, n_states)
+        print("CRD2QN")
+    elif type == "D2QN":
+        net = D2QN(n_actions, n_states)
+        sub_net = D2QN(n_actions, n_states)
+        print("D2QN")
     else:
         net = DQN(n_actions, n_states)
-    
-    if ddqn_model:
-        sub_net = net
+        sub_net = DQN(n_actions, n_states)
+        print("DQN")
 
-        return net, sub_net
+    return net, sub_net
 
-    return net
     
 
 """UNIT TESTING"""
