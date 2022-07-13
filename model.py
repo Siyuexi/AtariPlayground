@@ -73,22 +73,24 @@ class CRD2QN(nn.Module):
         self.n_actions = n_actions
         self.n_states = n_states
         # cnn for single feature extraction
-        self.conv1 = nn.Conv2d(n_actions, 32, 8, 4)
-        self.conv2 = nn.Conv2d(32, 64, 4, 2)
-        self.conv3 = nn.Conv2d(64, 64, 3, 1)
+        self.conv1 = nn.Conv2d(n_actions, 32, 8, 4, groups=4)
+        self.conv2 = nn.Conv2d(32, 64, 4, 2, groups=4)
+        self.conv3 = nn.Conv2d(64, 64, 3, 1, groups=4)
         # rnn for multiple feature concatenation
-        self.recu1 = nn.GRU(7*7*64, 512, 1, batch_first=True)
-        self.recu2 = nn.GRU(7*7*64, 512, 1, batch_first=True)
+        self.recu1 = nn.GRU(7*7*16, 128, 1, batch_first=True)
+        self.recu2 = nn.GRU(7*7*16, 128, 1, batch_first=True)
         # fc for prediction
-        self.fc_adv = nn.Linear(512, n_states)
-        self.fc_val = nn.Linear(512, 1)
+        self.fc1 = nn.Linear(128, n_states)
+        self.fc2 = nn.Linear(128, 1)
+        # relu
+        self.relu = nn.ReLU()
 
     def forward(self,x):
-        x = self.conv1(x)
-        x = self.conv2(x)
-        x = self.conv3(x)
+        x = self.relu(self.conv1(x))
+        x = self.relu(self.conv2(x))
+        x = self.relu(self.conv3(x))
         
-        x = x.view(x.size(0), self.n_states,-1)
+        x = x.view(x.size(0), self.n_states, -1)
 
         _,a = self.recu1(x)
         _,v = self.recu2(x)
@@ -96,8 +98,8 @@ class CRD2QN(nn.Module):
         a = a[0,:,:].view(x.size(0),-1)
         v = v[0,:,:].view(x.size(0),-1)
 
-        a = self.fc_adv(a)
-        v = self.fc_val(v)
+        a = self.fc1(a)
+        v = self.fc2(v)
 
         y = a + v.expand(x.size(0), self.n_actions) - a.mean(1).unsqueeze(1).expand(x.size(0), self.n_actions)
 
@@ -126,11 +128,7 @@ def get_net(type, n_actions, n_states):
 """UNIT TESTING"""
 # import torch
 # x = torch.randn([2,4,84,84])
-# net = get_net()
-# y = net(x)
-# print(y.shape)
-
-# net_1, net_2 = get_net(ddqn=True)
+# net_1, net_2 = get_net("CRD2QN", 4, 4)
 # y1 = net_1(x)
 # y2 = net_2(x)
 # print(y1.shape)
