@@ -14,7 +14,7 @@ breakout:
   hyper_params:           # hyper_params for training only
     gamma: 0.99
     epsilon: 0.1
-    batch_size: 512
+    batch_size: 32
     epoch: 10000000
     lr: 0.00025
     f_save: 100000         # frequency of model saving
