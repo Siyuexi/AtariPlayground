@@ -7,17 +7,20 @@ breakout:
   width: 84
   height: 84
   n_actions: 4            # num of actions
-  n_states: 4             # num of stacked states/frames
+  n_states: 4             # num of stacked states/frames per step
   skip: 4                 # num of skiped frames
   noop_max: 30            # num of no operation frames
-  memory_capacity: 500000
+  memory_capacity: 20000
   hyper_params:           # hyper_params for training only
     gamma: 0.99
-    epsilon: 0.1
+    epsilon: 0.2
     batch_size: 32
-    epoch: 10000000
+    iteration: 1000000
     lr: 0.00025
+    f: 4                   # parameters backward frequency
     f_save: 100000         # frequency of model saving
     f_update: 100000       # frequency of sub model updating
-    f_epoch: 10000         # frequency of loss calculating
-    f_episode: 1000        # frequency of reward calculating
+    f_epoch: 1000          # frequency of loss calculating
+    f_episode: 100         # frequency of reward calculating
+    train_start: 10000      # training starts after x epoch of experience collecting
+    test_start: 1000000    # testing starts at x epoch of exploration

@@ -121,8 +121,8 @@ class FrameTransposeEnv(gym.ObservationWrapper):
 
 
 class NoopResetEnv(gym.Wrapper):
-    def __init__(self, env, noop_max):
-        super().__init__(env)
+    def __init__(self, env, noop_max=30):
+        gym.Wrapper.__init__(self, env)
         self.noop_max = noop_max
         self.override_num_noops = None
         self.noop_action = 0
@@ -148,7 +148,7 @@ class NoopResetEnv(gym.Wrapper):
 
 class FireResetEnv(gym.Wrapper):
     def __init__(self, env):
-        super().__init__(env)
+        gym.Wrapper.__init__(self, env)
         assert env.unwrapped.get_action_meanings()[1] == 'FIRE'
         assert len(env.unwrapped.get_action_meanings()) >= 3
 
@@ -168,21 +168,23 @@ class FireResetEnv(gym.Wrapper):
 
 class MaxAndSkipEnv(gym.Wrapper):
     def __init__(self, env, skip=4):
-        super().__init__(env)
-        self._obs_buffer = np.zeros((2,)+env.observation_space.shape, dtype=np.uint8)
-        self._skip       = skip
+        gym.Wrapper.__init__(self, env)
+        self._obs_buffer = np.zeros((2,) + env.observation_space.shape, dtype=np.uint8)
+        self._skip = skip
 
     def step(self, action):
         total_reward = 0.0
         done = None
         for i in range(self._skip):
             obs, reward, done, info = self.env.step(action)
-            if i == self._skip - 2: self._obs_buffer[0] = obs
-            if i == self._skip - 1: self._obs_buffer[1] = obs
+            if i == self._skip - 2:
+                self._obs_buffer[0] = obs
+            if i == self._skip - 1:
+                self._obs_buffer[1] = obs
             total_reward += reward
             if done:
                 break
-        max_frame = self._obs_buffer.max(axis=0)
+        max_frame = np.max(self._obs_buffer, axis=0)
 
         return max_frame, total_reward, done, info
 
@@ -200,16 +202,15 @@ class ClipRewardEnv(gym.RewardWrapper):
 
 class EpisodicLifeEnv(gym.Wrapper):
     def __init__(self, env):
-        super().__init__(env)
+        gym.Wrapper.__init__(self, env)
         self.lives = 0
-        self.was_real_done  = True
+        self.was_real_done = True
 
     def step(self, action):
         obs, reward, done, info = self.env.step(action)
         self.was_real_done = done
         lives = self.env.unwrapped.ale.lives()
-
-        if lives < self.lives and lives > 0:
+        if self.lives > lives > 0:
             done = True
         self.lives = lives
         return obs, reward, done, info
@@ -223,6 +224,15 @@ class EpisodicLifeEnv(gym.Wrapper):
         return obs
 
 
+class ScaledFloatFrame(gym.ObservationWrapper):
+    def __init__(self, env):
+        gym.ObservationWrapper.__init__(self, env)
+        self.observation_space = gym.spaces.Box(low=0, high=1, shape=env.observation_space.shape, dtype=np.float32)
+
+    def observation(self, observation):
+        # careful! This undoes the memory optimization, use with smaller replay buffers only.
+        return np.array(observation).astype(np.float32) / 255.0
+
 
 def get_env(name,noop_max, skip, width, height, n, deepmind_wrapper):
     
@@ -232,17 +242,25 @@ def get_env(name,noop_max, skip, width, height, n, deepmind_wrapper):
     env = EpisodicLifeEnv(env)
     env = NoopResetEnv(env, noop_max)
     env = MaxAndSkipEnv(env, skip)
-    env = ClipRewardEnv(env)
     if 'FIRE' in env.unwrapped.get_action_meanings():
         env = FireResetEnv(env) 
     
     # frame wrappers
     if deepmind_wrapper:
         env = PreprocessFrame(env)
+        """
+        Using memory space to exchange running time. 
+        You can also delete this code and scale float frame when you sample obs from buffer manually to save your memory space.
+        But of course it will be slower.
+        """ 
+        env = ScaledFloatFrame(env)
+
     else:
         env = FrameProcessEnv(env, width, height, True)
         env = FrameStackEnv(env, n)
         env = FrameTransposeEnv(env)
+            
+    env = ClipRewardEnv(env)
 
     return env
 

@@ -22,9 +22,7 @@ def args():
     parser.add_argument("-i", "--id", type=str, default="", help="special label for a training task")
     parser.add_argument("--ddqn", type=bool, default=True, help="using ddqn structure.")
     parser.add_argument("--deepmind", type=bool, default=True, help="using deepmind wrapper.")
-    parser.add_argument("--lite", type=bool, default=True, help="using lite buffer")
-    parser.add_argument("--train_start", type=int, default=200000, help="training starts after x epoch of experience collecting.")
-    parser.add_argument("--test_start", type=int, default=1000000, help="testing starts at x epoch of checkpoints.")
+    parser.add_argument("--lite", type=bool, default=True, help="using lite buffer.")
 
     return parser
 
@@ -36,8 +34,7 @@ def main(args):
         id = args.id
         game = args.game
         mode = args.mode
-        train_start = args.train_start
-        test_start = args.test_start
+        ddqn = args.ddqn
         param = yaml.load(open("param.yaml"), Loader=yaml.SafeLoader)[game]
         
         # building infrastructure
@@ -52,14 +49,15 @@ def main(args):
         exit()
 
     # creating basic paths
-    if not os.path.exists("./checkpoint"):
+    if not os.path.exists("./checkpoint/temp"):
         os.makedirs("./checkpoint/temp")
-    if not os.path.exists("./log"):
+    if not os.path.exists("./log/uru"):
         os.makedirs("./log/uru")
+    if not os.path.exists("./log/viz"):
         os.makedirs("./log/viz")
 
     # game begin
-    player = agent.Player(id, net, env, mem, hp, game, mode, train_start, test_start, args.ddqn)
+    player = agent.Player(id, net, env, mem, hp, game, mode, ddqn)
     player.execute()
 
 

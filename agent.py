@@ -5,13 +5,14 @@ import time
 import visdom
 import loguru
 from tqdm import tqdm
+from collections import OrderedDict
 """
 PLAY
 CREATED BY SIYUEXI
 2022.07.04
 """
 class Player():
-    def __init__(self, id, net, env, mem, hp, game, mode, train_start, test_start, ddqn) -> None:
+    def __init__(self, id, net, env, mem, hp, game, mode, ddqn) -> None:
         self.id = id
         self.game = game
         self.mode = mode
@@ -23,9 +24,8 @@ class Player():
         self.mem = mem
         # hyper parameters
         self.hp = hp
-        # start epoch
-        self.train_start = train_start
-        self.test_start = test_start
+        self.train_start = hp['train_start']
+        self.test_start = hp['test_start']
         # device
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print(self.device)
@@ -71,8 +71,9 @@ class Player():
         gamma = self.hp['gamma']
         epsilon = self.hp['epsilon']
         batch_size = self.hp['batch_size']
-        epoch = self.hp['epoch']
+        iteration = self.hp['iteration']
         lr = self.hp['lr']
+        f = self.hp['f']
         f_save = self.hp['f_save']
         f_update = self.hp['f_update']
         f_epoch = self.hp['f_epoch']
@@ -80,7 +81,7 @@ class Player():
 
         # learning settings
         criterion = torch.nn.MSELoss()
-        optimizer = torch.optim.SGD(self.net.parameters(), lr= lr)
+        optimizer = torch.optim.RMSprop(self.net.parameters(), lr=lr)
         self.net = self.net.to(self.device)
         self.subnet = self.subnet.to(self.device)
 
@@ -99,6 +100,8 @@ class Player():
         log.add("./log/uru/" + self.game + self.id + ".log")
         
         # cache 
+        epoch = 1 # number of ended training
+        epoch_ = 0 # last epoch
         episode = 1 # number of ended games
         episode_ = 0 # last episode
         mean_reward = 0 # re-calculated every episode
@@ -116,15 +119,17 @@ class Player():
         # in DRL, one epoch = one step (or multiple steps) TD process
         # in DRL, one episode = one ended game
         epsilon_ = epsilon
-        for step in tqdm(range(1, epoch + 1)):
+        for step in tqdm(range(1, iteration + 1)):
             # encode obs as k frames state
             """ last_state = torch.from_numpy(np.array(last_state)).unsqueeze(0).float().to(self.device) # state shape: [1, k, w, h] tensor float """
+            cur_index = self.mem.store_memory_obs(last_state)
             encoded_state = self.mem.encoder_recent_observation()
             encoded_state = change_to_tensor(encoded_state).unsqueeze(0)
             # get expierence
             # if it is a new trained model, epsilon_ changed from 1 to epsilon linearly to accelerate training
-            if ~load_flag:
-                epsilon_ = 1 - (1 - epsilon) * (1.0 * step / epoch)
+            if step < self.test_start and not load_flag:
+                epsilon_ = 1 - (1 - epsilon) * (1.0 * step / self.test_start)
+            # sampling for replay buffer
             if np.random.random() > epsilon_:
                 """ action = self.net(last_state).max(dim=1)[1].item() """
                 action = self.net(encoded_state).max(dim=1)[1].item()
@@ -136,7 +141,6 @@ class Player():
             last_state = last_state.squeeze(0).cpu().byte().numpy() # last_state shape: [k, w, h] array 8bit
             self.mem.push_quadro(last_state, action, reward, state)
             """
-            cur_index = self.mem.store_memory_obs(last_state)
             self.mem.store_memory_effect(cur_index, action, reward, done)
 
             mean_reward += reward
@@ -144,15 +148,17 @@ class Player():
             if done:
                 # state = torch.from_numpy(np.array(self.env.reset())).unsqueeze(0).float().to(self.device) # state shape: [1, k, w, h] tensor 32bit
                 state = self.env.reset()
-                episode += 1
                 avg_reward += mean_reward
                 avg_step += mean_step
                 mean_reward = 0
                 mean_step = 0
+
+                episode += 1
+
             last_state = state
 
             # get backward
-            if step % batch_size == 0:
+            if step % f == 0:
                 """
                 state_batch, action_batch, reward_batch, state_batch_, index_batch = self.mem.get_batch(batch_size)
                 state_batch = torch.from_numpy(state_batch).float().to(self.device) # s shape: [b, a] float
@@ -196,20 +202,28 @@ class Player():
                 loss.backward()
                 optimizer.step()
 
-            # log per f_epoch steps
-            if step % f_epoch == 0:
+                epoch += 1
+
+            # update subnet parameters
+            if step % f_update == 0:
+                self.subnet.load_state_dict(OrderedDict(self.net.state_dict()))
+
+            # save checkpoint per f_save steps
+            if step % f_save == 0:
+                torch.save(self.net.state_dict(), "./checkpoint/temp/" + self.game + self.id + str(step) + ".pth")
+
+            # log per f_epoch epoches, skip the same epoch
+            if epoch % f_epoch == 0 and epoch_ != epoch:
                 log_step += 1
                 avg_loss = avg_loss / f_epoch
                 viz.line([avg_loss], [log_step], win="average_loss", update='append', 
-                    opts=dict(title="average_loss per %d steps" % f_epoch, xlabel="steps/%d" % f_epoch, ylabel="average_loss"))
-                log.debug( 'Epoch [{}/{}]\tAverageLoss: {:.6f}\t'.format(step , epoch, avg_loss))                
+                    opts=dict(title="average_loss per %d batches" % f_epoch, xlabel="batches/%d" % f_epoch, ylabel="average_loss"))
+                log.debug( 'Epoch [{}]\tAverageLoss: {:.6f}\t'.format(epoch, avg_loss)) 
+                epoch_ = epoch               
                 avg_loss = 0
 
-            # log per f_episode games
-            if episode % f_episode == 0:
-                # skip the same episode
-                if episode_ == episode:
-                    continue
+            # log per f_episode episodes, skip the same episode
+            if episode % f_episode == 0 and episode_ != episode:
                 log_game += 1
                 avg_reward = avg_reward / f_episode
                 avg_step = avg_step / f_episode
@@ -220,16 +234,7 @@ class Player():
                 log.info( 'Episode [{}]\tAverageReward: {:.6f}\tAverageStep: {:.6f}\t'.format(episode, avg_reward, avg_step))
                 episode_ = episode
                 avg_reward = 0
-                avg_step = 0
-
-            # update subnet parameters
-            if step % f_update == 0:
-                self.subnet.load_state_dict(self.net.state_dict())
-
-            # save checkpoint per f_save steps
-            if step % f_save == 0:
-                torch.save(self.net.state_dict(), "./checkpoint/temp/" + self.game + self.id + str(log_step) + ".pth")
-                
+                avg_step = 0        
             
         # save final model parameters
         torch.save(self.net.state_dict(), "./checkpoint/" + self.game + self.id + ".pth")

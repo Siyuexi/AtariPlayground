@@ -1,6 +1,6 @@
 import torch.nn as nn
 """
-I HAVE NO IDEA WHETHER IT WORKS OR NOT WHEN I AM UNSING RNN WITH A TANH ON ADVANTAGE AND VALUE FUNCATION.
+CRD2QN NEED ALL STEP'S VALUE FOR TRAINING. WHEN USING IT, THE MEANING OF N_STATES IS DIFFERENT.
 CREATED BY SIYUEXI
 2022.07.02
 """
@@ -73,14 +73,14 @@ class CRD2QN(nn.Module):
         self.n_actions = n_actions
         self.n_states = n_states
         # cnn for single feature extraction
-        self.conv1 = nn.Conv2d(n_actions, 32, 8, 4, groups=4)
-        self.conv2 = nn.Conv2d(32, 64, 4, 2, groups=4)
-        self.conv3 = nn.Conv2d(64, 64, 3, 1, groups=4)
+        self.conv1 = nn.Conv2d(n_states, 32, 8, 4, groups=n_states)
+        self.conv2 = nn.Conv2d(32, 64, 4, 2, groups=n_states)
+        self.conv3 = nn.Conv2d(64, 64, 3, 1, groups=n_states)
         # rnn for multiple feature concatenation
-        self.recu1 = nn.GRU(7*7*16, 128, 1, batch_first=True)
-        self.recu2 = nn.GRU(7*7*16, 128, 1, batch_first=True)
-        # fc for prediction
-        self.fc1 = nn.Linear(128, n_states)
+        self.recu1 = nn.GRU(int(7*7*64 / n_actions), 128, 1, batch_first=True)
+        self.recu2 = nn.GRU(int(7*7*64 / n_actions), 128, 1, batch_first=True)
+        # mlp for dimension reduction and activation
+        self.fc1 = nn.Linear(128, n_actions)
         self.fc2 = nn.Linear(128, 1)
         # relu
         self.relu = nn.ReLU()
@@ -89,15 +89,18 @@ class CRD2QN(nn.Module):
         x = self.relu(self.conv1(x))
         x = self.relu(self.conv2(x))
         x = self.relu(self.conv3(x))
-        
-        x = x.view(x.size(0), self.n_states, -1)
 
-        _,a = self.recu1(x)
-        _,v = self.recu2(x)
+        x = x.view(x.size(0), -1)
+
+        a = x.view(x.size(0), self.n_states, -1)
+        v = x.view(x.size(0), self.n_states, -1)
+
+        _,a = self.recu1(a)
+        _,v = self.recu2(v)
 
         a = a[0,:,:].view(x.size(0),-1)
         v = v[0,:,:].view(x.size(0),-1)
-
+        
         a = self.fc1(a)
         v = self.fc2(v)
 
